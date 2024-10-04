@@ -61,6 +61,69 @@ export default function Home() {
             <button className="text-xs text-text-color-three border-b border-text-color-three pb-2 mt-8">Read more</button>
           </div>
         </section>
+        <section className="flex flex-col justify-center items-center py-8 px-6">
+          <h2 className="text-text-color-one tracking-[0.4em] text-xs pt-4">Our Services</h2>
+          <p className="text-text-color-five">Experience the Difference</p>
+          <div className="py-4 px-6 flex flex-col self-center space-y-12">
+            <div className="flex items-center gap-4 mt-4">
+              <Image 
+                src={"/images/bullet.svg"}
+                width={12}
+                height={12}
+                alt="Hero Image"
+              />
+              <p className="text-text-color-four">Ghost Writing</p>
+            </div>
+            <div className="flex items-center gap-4">
+              <Image 
+                src={"/images/bullet.svg"}
+                width={12}
+                height={12}
+                alt="Hero Image"
+              />
+              <p className="text-text-color-four">Book cover Design</p>
+            </div>
+            <div className="flex items-center gap-4">
+              <Image 
+                src={"/images/bullet.svg"}
+                width={12}
+                height={12}
+                alt="Hero Image"
+              />
+              <p className="text-text-color-four">Book Editing</p>
+            </div>
+          </div>
+
+          <div className="flex flex-col justify-center items-center mt-20">
+            <h2 className="text-text-color-one tracking-[0.4em] text-xs pt-4">Our Services</h2>
+            <p className="text-text-color-five">View some of our Crafts</p>
+            <div className="flex space-x-4 overflow-x-scroll my-8 scroll-smooth">
+              <Image 
+                src={"/images/sample1.svg"}
+                width={259}
+                height={326}
+                className="rounded-md"
+                alt="Craft one"
+                
+              />
+              
+              <Image 
+                src={"/images/sample2.svg"}
+                width={259}
+                height={326}
+                className="rounded-md"
+                alt="Craft two"
+              />
+              <Image 
+                src={"/images/sample3.svg"}
+                width={259}
+                height={326}
+                className="rounded-md"
+                alt="Craft three"
+              />
+            </div>
+          </div>
+        </section>
       </main>
     </div>
   );
