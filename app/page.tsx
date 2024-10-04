@@ -1,101 +1,67 @@
 import Image from "next/image";
+import { montsy, merri, changa } from "@/fonts/fonts";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div className={`${montsy.className} bg-white flex flex-col`}>
+      <header className="py-4 px-6">
+        <div className="flex justify-between items-center">
+          <Image 
+          src={"/images/logo.svg"}
+          width={80}
+          height={19}
+          alt="Logo"
+          />
+        
+          <Image 
+          src={"/images/hamBurger.svg"}
+          width={4}
+          height={16}
+          alt="Logo"
+          />
         </div>
+      </header>
+      <main className="">
+        <section className="flex flex-col justify-center items-center text-center py-8">
+          <p className={`${montsy.className} text-xs text-text-color-one`}>We make things easy</p>
+
+          <div className="py-4" >
+            <Image 
+            src={"/images/hero.svg"}
+            width={295.6}
+            height={279}
+            alt="Hero Image"
+            />
+          </div>
+          
+          <h1 className={`${merri.className} text-sm text-h1-color`}>Quit the Hunt</h1>
+
+          <p className="text-text-color-one text-xs px-16  py-4">Searching for the perfect freelancer can be overwhelming. Let us simplify things</p>
+
+          <button className="bg-btn-one-color text-white text-xs p-3 w-3/4 rounded-md">Try a demo</button>
+
+          <button className="bg-btn-two-color text-white text-xs p-3 w-3/4 rounded-md mt-2">Get started</button>
+        </section>
+
+        <section className="flex flex-col bg-btn-two-color py-4 rounded-md mt-16 px-6">
+          <div className="py-4 flex flex-col justify-center items-center">
+            <p className="text-text-color-two text-xs">About Swiftpen</p>
+            <h2 className={`${merri.className} text-text-color-two text-center text-lg mt-8`}>About Us</h2>
+            <div className="pt-6">
+              <Image 
+              src={"/images/founder.svg"}
+              width={276}
+              height={348.28}
+              alt="Hero Image"
+              className=""
+              />
+            </div>
+            <p className="text-xs px-8 text-center text-text-color-two"><span className={`${changa.className} text-3xl leading-none`}>&quot;</span>At Swift Pen, we simplify the freelancing process, ensuring you get reliable, high-quality services in ghostwriting, book editing, cover design, and more. With our dedicated administrator, Mr Raphael, we match your project with the best freelancer from our talented pool, guaranteeing timely delivery, exceptional quality, and budget-friendly solutions. Trust Swift Pen to bring your project to life.</p>
+            
+            <button className="text-xs text-text-color-three border-b border-text-color-three pb-2 mt-8">Read more</button>
+          </div>
+        </section>
       </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
     </div>
   );
 }
