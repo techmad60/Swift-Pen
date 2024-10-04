@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { montsy, merri, changa } from "@/fonts/fonts";
+import { FaArrowRight } from 'react-icons/fa';
 
 export default function Home() {
   return (
@@ -211,9 +212,9 @@ export default function Home() {
           </div>
         </section>
       </main>
-      <footer className="px-6 py-8 space-y-6">
+      <footer className="px-6 py-8 space-y-6 flex flex-col">
         <section className="flex flex-col">
-          <h2 className="text-btn-one-color tracking-[0.2em] text-sm font-medium pt-4">Our Services</h2>
+          <h2 className="text-btn-one-color  text-sm font-medium pt-4">Our Services</h2>
             <div className="flex flex-col space-y-6 ">
               <div className="flex items-center gap-4 mt-4">
                 <Image 
@@ -245,7 +246,7 @@ export default function Home() {
           </div>
         </section>
         <section className="flex flex-col">
-          <h2 className="text-btn-one-color tracking-[0.2em] text-sm font-medium pt-4">Contact Us</h2>
+          <h2 className="text-btn-one-color  text-sm font-medium pt-4">Contact Us</h2>
             <div className="flex flex-col space-y-6 ">
               <div className="flex items-center gap-4 mt-4">
                 <Image 
@@ -277,7 +278,7 @@ export default function Home() {
           </div>
         </section>
         <section className="flex flex-col">
-          <h2 className="text-btn-one-color tracking-[0.2em] text-sm font-medium pt-4">Follow Us</h2>
+          <h2 className="text-btn-one-color  text-sm font-medium pt-4">Follow Us</h2>
             <div className="flex flex-col space-y-6 ">
               <div className="flex items-center gap-4 mt-4">
                 <Image 
@@ -300,7 +301,7 @@ export default function Home() {
           </div>
         </section>
         <section className="flex flex-col">
-          <h2 className="text-btn-one-color tracking-[0.2em] text-sm font-medium pt-4">Get our App on</h2>
+          <h2 className="text-btn-one-color  text-sm font-medium pt-4">Get our App on</h2>
             <div className="flex flex-col space-y-4 ">
               <div className="flex items-center gap-4 mt-4">
                 <Image 
@@ -322,10 +323,24 @@ export default function Home() {
               </div>
           </div>
         </section>
-        <section>
-
+        <section className="flex flex-col">
+          <form className="flex flex-col self-center  mt-16">
+            <label className="text-text-color-one">Subscribe to our Newsletter</label>
+            <input type="text" placeholder="Email" className="outline-none border-b  pt-4 placeholder:text-xs"/>
+            <button className="flex items-center self-end text-white p-2 gap-2 rounded-sm bg-[#786F21] mt-4">Send <span>
+          <FaArrowRight /></span></button>
+          </form>
+          <div className="self-center mt-12">
+            <Image 
+              src={"/images/brownLogo.svg"}
+              width={250}
+              height={250}
+              alt="Hero Image"
+            />
+          </div>
+          <p className="text-btn-two-color text-center text-xs mt-12">Copyright 2024 &copy; All Rights Reserved</p>
         </section>
       </footer>
-    </div>
+    </div> 
   );
 }
