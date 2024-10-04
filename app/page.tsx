@@ -305,7 +305,7 @@ export default function Home() {
             <div className="flex flex-col space-y-4 ">
               <div className="flex items-center gap-4 mt-4">
                 <Image 
-                  src={"/images/playstore.svg"}
+                  src={"/images/playStore.svg"}
                   width={24}
                   height={24}
                   alt="Hero Image"
@@ -314,7 +314,7 @@ export default function Home() {
               </div>
               <div className="flex items-center gap-4">
                 <Image 
-                  src={"/images/appstore.svg"}
+                  src={"/images/appStore.svg"}
                   width={20}
                   height={20}
                   alt="Hero Image"
