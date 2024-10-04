@@ -22,7 +22,7 @@ const config: Config = {
       },
       backgroundImage: {
         'dot-pattern': "url('/images/dottedBg.png')",
-        'footer-texture': "url('/img/footer-texture.png')",
+        'curved-pattern': "url('/images/curved-pattern.png')",
       }
     },
   },

@@ -23,7 +23,7 @@ export default function Home() {
       </header>
       <main className="">
         <section className="flex flex-col justify-center items-center text-center py-8">
-          <p className={`${montsy.className} text-xs text-text-color-one`}>We make things easy</p>
+          <p className={`${montsy.className} text-xs text-h2-color`}>We make things easy</p>
 
           <div className="py-4" >
             <Image 
@@ -36,7 +36,7 @@ export default function Home() {
           
           <h1 className={`${merri.className} text-sm text-h1-color`}>Quit the Hunt</h1>
 
-          <p className="text-text-color-one text-xs px-16  py-4">Searching for the perfect freelancer can be overwhelming. Let us simplify things</p>
+          <p className="text-h2-color text-xs px-16  py-4">Searching for the perfect freelancer can be overwhelming. Let us simplify things</p>
 
           <button className="bg-btn-one-color text-white text-xs p-3 w-3/4 rounded-md">Try a demo</button>
 
@@ -61,9 +61,9 @@ export default function Home() {
             <button className="text-xs text-text-color-three border-b border-text-color-three pb-2 mt-8">Read more</button>
           </div>
         </section>
-        <section className="flex flex-col justify-center items-center py-8 px-6">
-          <h2 className="text-text-color-one tracking-[0.4em] text-xs pt-4">Our Services</h2>
-          <p className="text-text-color-five">Experience the Difference</p>
+        <section className="flex flex-col justify-center items-center py-8 px-6 bg-dot-pattern">
+          <h2 className="text-h2-color tracking-[0.4em] text-xs pt-4">Our Services</h2>
+          <p className="text-text-color-five">Experience the difference</p>
           <div className="py-4 px-6 flex flex-col self-center space-y-12">
             <div className="flex items-center gap-4 mt-4">
               <Image 
@@ -94,9 +94,9 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="flex flex-col justify-center items-center mt-20">
-            <h2 className="text-text-color-one tracking-[0.4em] text-xs pt-4">Our Services</h2>
-            <p className="text-text-color-five">View some of our Crafts</p>
+          <div className="flex flex-col justify-center items-center mt-20 ">
+            <h2 className="text-h2-color tracking-[0.4em] text-xs pt-4">Our Crafts</h2>
+            <p className="text-text-color-five">View some of our crafts</p>
             <div className="flex space-x-4 overflow-x-scroll my-8 scroll-smooth">
               <Image 
                 src={"/images/sample1.svg"}
@@ -121,6 +121,92 @@ export default function Home() {
                 className="rounded-md"
                 alt="Craft three"
               />
+            </div>
+          </div>
+        </section>
+        <section className="bg-btn-two-color">
+          <div className="flex flex-col items-center bg-curved-pattern py-12">
+            <h2 className="text-text-color-two tracking-[0.4em] text-xs ">TESTIMONIALS</h2>
+            <p className="text-white">What they say about us</p>
+            <div className="text-h2-color">
+              <div className="bg-white items-center flex flex-col w-[259px] h-[326px] rounded-md mt-12 relative px-8">
+                <div className="rounded-full p-2 flex justify-center items-center bg-green-950 w-fit absolute -top-7">
+                  <Image 
+                    src={"/images/happpy.png"}
+                    width={50}
+                    height={50}
+                    className="rounded-md"
+                    alt="Craft three"
+                  />
+                </div>
+                <hr className="mt-16 w-8 border-gray-300"/>
+                <div className="flex items-center gap-2 my-4"> 
+                  <Image 
+                    src={"/images/stars.svg"}
+                    width={81}
+                    height={16}
+                    className="rounded-md"
+                    alt="Craft three"
+                    />
+                    <p className="">5.0</p>
+                </div>
+                <p className="text-sm text-center">Very easy with communication. Competent in providing services. Committed to achievingexcellent results. </p>
+
+                <hr className="mt-8 w-full border-gray-300"/>
+                <p className="border-l border-green-800 text-xs mt-6 self-start pl-2">Satisfied Client</p>
+              </div>
+              <div className="bg-white items-center flex flex-col w-[259px] h-[326px] rounded-md mt-12 relative px-8">
+                <div className="rounded-full p-2 flex justify-center items-center bg-green-950 w-fit absolute -top-7">
+                  <Image 
+                    src={"/images/happpy.png"}
+                    width={50}
+                    height={50}
+                    className="rounded-md"
+                    alt="Craft three"
+                  />
+                </div>
+                <hr className="mt-16 w-8 border-gray-300"/>
+                <div className="flex items-center gap-2 my-4"> 
+                  <Image 
+                    src={"/images/stars.svg"}
+                    width={81}
+                    height={16}
+                    className="rounded-md"
+                    alt="Craft three"
+                    />
+                    <p className="">5.0</p>
+                </div>
+                <p className="text-sm text-center">Very easy with communication. Competent in providing services. Committed to achievingexcellent results. </p>
+
+                <hr className="mt-8 w-full border-gray-300"/>
+                <p className="border-l border-green-800 text-xs mt-6 self-start pl-2">Satisfied Client</p>
+              </div>
+              <div className="bg-white items-center flex flex-col w-[259px] h-[326px] rounded-md mt-12 relative px-8">
+                <div className="rounded-full p-2 flex justify-center items-center bg-green-950 w-fit absolute -top-7">
+                  <Image 
+                    src={"/images/happpy.png"}
+                    width={50}
+                    height={50}
+                    className="rounded-md"
+                    alt="Craft three"
+                  />
+                </div>
+                <hr className="mt-16 w-8 border-gray-300"/>
+                <div className="flex items-center gap-2 my-4"> 
+                  <Image 
+                    src={"/images/stars.svg"}
+                    width={81}
+                    height={16}
+                    className="rounded-md"
+                    alt="Craft three"
+                    />
+                    <p className="">5.0</p>
+                </div>
+                <p className="text-sm text-center">Very easy with communication. Competent in providing services. Committed to achievingexcellent results. </p>
+
+                <hr className="mt-8 w-full border-gray-300"/>
+                <p className="border-l border-green-800 text-xs mt-6 self-start pl-2">Satisfied Client</p>
+              </div>
             </div>
           </div>
         </section>
