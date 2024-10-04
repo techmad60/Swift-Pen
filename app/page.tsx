@@ -211,6 +211,118 @@ export default function Home() {
           </div>
         </section>
       </main>
+      <footer className="px-6 py-8 grid">
+        <section className="flex flex-col">
+          <h2 className="text-btn-one-color tracking-[0.2em] text-lg font-medium pt-4">Our Services</h2>
+            <div className="flex flex-col space-y-6 ">
+              <div className="flex items-center gap-4 mt-4">
+                <Image 
+                  src={"/images/bullet-brown.svg"}
+                  width={20}
+                  height={20}
+                  alt="Hero Image"
+                />
+                <p className="text-btn-one-color">Ghost Writing</p>
+              </div>
+              <div className="flex items-center gap-4">
+                <Image 
+                  src={"/images/bullet-brown.svg"}
+                  width={20}
+                  height={20}
+                  alt="Hero Image"
+                />
+                <p className="text-btn-one-color">Book cover Design</p>
+              </div>
+              <div className="flex items-center gap-4">
+                <Image 
+                  src={"/images/bullet-brown.svg"}
+                  width={20}
+                  height={20}
+                  alt="Hero Image"
+                />
+                <p className="text-btn-one-color">Book Editing</p>
+              </div>
+          </div>
+        </section>
+        <section className="flex flex-col">
+          <h2 className="text-btn-one-color tracking-[0.2em] text-lg font-medium pt-4">Contact Us</h2>
+            <div className="flex flex-col space-y-6 ">
+              <div className="flex items-center gap-4 mt-4">
+                <Image 
+                  src={"/images/location.svg"}
+                  width={24}
+                  height={24}
+                  alt="Hero Image"
+                />
+                <p className="text-btn-one-color">2972 Westheimer Rd. Santa Ana, Illinois 85486 </p>
+              </div>
+              <div className="flex items-center gap-4">
+                <Image 
+                  src={"/images/phone.svg"}
+                  width={20}
+                  height={20}
+                  alt="Hero Image"
+                />
+                <p className="text-btn-one-color">(684) 555-0102</p>
+              </div>
+              <div className="flex items-center gap-4">
+                <Image 
+                  src={"/images/mail.svg"}
+                  width={20}
+                  height={20}
+                  alt="Hero Image"
+                />
+                <p className="text-btn-one-color">alma.lawson@example.com</p>
+              </div>
+          </div>
+        </section>
+        <section className="flex flex-col">
+          <h2 className="text-btn-one-color tracking-[0.2em] text-lg font-medium pt-4">Follow Us</h2>
+            <div className="flex flex-col space-y-6 ">
+              <div className="flex items-center gap-4 mt-4">
+                <Image 
+                  src={"/images/instagram.svg"}
+                  width={24}
+                  height={24}
+                  alt="Hero Image"
+                />
+                <p className="text-btn-one-color">Instagram</p>
+              </div>
+              <div className="flex items-center gap-4">
+                <Image 
+                  src={"/images/facebook.svg"}
+                  width={16}
+                  height={16}
+                  alt="Hero Image"
+                />
+                <p className="text-btn-one-color">Facebook</p>
+              </div>
+          </div>
+        </section>
+        <section className="flex flex-col">
+          <h2 className="text-btn-one-color tracking-[0.2em] text-lg font-medium pt-4">Get our App on</h2>
+            <div className="flex flex-col space-y-6 ">
+              <div className="flex items-center gap-4 mt-4">
+                <Image 
+                  src={"/images/playstore.svg"}
+                  width={24}
+                  height={24}
+                  alt="Hero Image"
+                />
+                <p className="text-btn-one-color">Playstore</p>
+              </div>
+              <div className="flex items-center gap-4">
+                <Image 
+                  src={"/images/appstore.svg"}
+                  width={20}
+                  height={20}
+                  alt="Hero Image"
+                />
+                <p className="text-btn-one-color">Appstore</p>
+              </div>
+          </div>
+        </section>
+      </footer>
     </div>
   );
 }
