@@ -211,9 +211,9 @@ export default function Home() {
           </div>
         </section>
       </main>
-      <footer className="px-6 py-8 grid">
+      <footer className="px-6 py-8 space-y-6">
         <section className="flex flex-col">
-          <h2 className="text-btn-one-color tracking-[0.2em] text-lg font-medium pt-4">Our Services</h2>
+          <h2 className="text-btn-one-color tracking-[0.2em] text-sm font-medium pt-4">Our Services</h2>
             <div className="flex flex-col space-y-6 ">
               <div className="flex items-center gap-4 mt-4">
                 <Image 
@@ -222,7 +222,7 @@ export default function Home() {
                   height={20}
                   alt="Hero Image"
                 />
-                <p className="text-btn-one-color">Ghost Writing</p>
+                <p className="text-btn-one-color text-xs">Ghost Writing</p>
               </div>
               <div className="flex items-center gap-4">
                 <Image 
@@ -231,7 +231,7 @@ export default function Home() {
                   height={20}
                   alt="Hero Image"
                 />
-                <p className="text-btn-one-color">Book cover Design</p>
+                <p className="text-btn-one-color text-xs">Book cover Design</p>
               </div>
               <div className="flex items-center gap-4">
                 <Image 
@@ -240,12 +240,12 @@ export default function Home() {
                   height={20}
                   alt="Hero Image"
                 />
-                <p className="text-btn-one-color">Book Editing</p>
+                <p className="text-btn-one-color text-xs">Book Editing</p>
               </div>
           </div>
         </section>
         <section className="flex flex-col">
-          <h2 className="text-btn-one-color tracking-[0.2em] text-lg font-medium pt-4">Contact Us</h2>
+          <h2 className="text-btn-one-color tracking-[0.2em] text-sm font-medium pt-4">Contact Us</h2>
             <div className="flex flex-col space-y-6 ">
               <div className="flex items-center gap-4 mt-4">
                 <Image 
@@ -254,7 +254,7 @@ export default function Home() {
                   height={24}
                   alt="Hero Image"
                 />
-                <p className="text-btn-one-color">2972 Westheimer Rd. Santa Ana, Illinois 85486 </p>
+                <p className="text-btn-one-color text-xs">2972 Westheimer Rd. Santa Ana, Illinois 85486 </p>
               </div>
               <div className="flex items-center gap-4">
                 <Image 
@@ -263,7 +263,7 @@ export default function Home() {
                   height={20}
                   alt="Hero Image"
                 />
-                <p className="text-btn-one-color">(684) 555-0102</p>
+                <p className="text-btn-one-color text-xs">(684) 555-0102</p>
               </div>
               <div className="flex items-center gap-4">
                 <Image 
@@ -272,12 +272,12 @@ export default function Home() {
                   height={20}
                   alt="Hero Image"
                 />
-                <p className="text-btn-one-color">alma.lawson@example.com</p>
+                <p className="text-btn-one-color text-xs">alma.lawson@example.com</p>
               </div>
           </div>
         </section>
         <section className="flex flex-col">
-          <h2 className="text-btn-one-color tracking-[0.2em] text-lg font-medium pt-4">Follow Us</h2>
+          <h2 className="text-btn-one-color tracking-[0.2em] text-sm font-medium pt-4">Follow Us</h2>
             <div className="flex flex-col space-y-6 ">
               <div className="flex items-center gap-4 mt-4">
                 <Image 
@@ -286,22 +286,22 @@ export default function Home() {
                   height={24}
                   alt="Hero Image"
                 />
-                <p className="text-btn-one-color">Instagram</p>
+                <p className="text-btn-one-color text-xs">Instagram</p>
               </div>
               <div className="flex items-center gap-4">
                 <Image 
                   src={"/images/facebook.svg"}
-                  width={16}
-                  height={16}
+                  width={14}
+                  height={14}
                   alt="Hero Image"
                 />
-                <p className="text-btn-one-color">Facebook</p>
+                <p className="text-btn-one-color text-xs">Facebook</p>
               </div>
           </div>
         </section>
         <section className="flex flex-col">
-          <h2 className="text-btn-one-color tracking-[0.2em] text-lg font-medium pt-4">Get our App on</h2>
-            <div className="flex flex-col space-y-6 ">
+          <h2 className="text-btn-one-color tracking-[0.2em] text-sm font-medium pt-4">Get our App on</h2>
+            <div className="flex flex-col space-y-4 ">
               <div className="flex items-center gap-4 mt-4">
                 <Image 
                   src={"/images/playstore.svg"}
@@ -309,7 +309,7 @@ export default function Home() {
                   height={24}
                   alt="Hero Image"
                 />
-                <p className="text-btn-one-color">Playstore</p>
+                <p className="text-btn-one-color text-xs">Playstore</p>
               </div>
               <div className="flex items-center gap-4">
                 <Image 
@@ -318,9 +318,12 @@ export default function Home() {
                   height={20}
                   alt="Hero Image"
                 />
-                <p className="text-btn-one-color">Appstore</p>
+                <p className="text-btn-one-color text-xs">Appstore</p>
               </div>
           </div>
+        </section>
+        <section>
+
         </section>
       </footer>
     </div>
