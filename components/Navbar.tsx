@@ -60,8 +60,8 @@ export default function Navbar () {
         <FaTimes size={24} />
         </button>
         
-        <div className="flex flex-col text-center leading-[60px] my-12 text-xl lg:flex-row lg:text-sm lg:text-h2-color gap-12 ">
-            <div className='flex flex-col lg:flex-row justify-between lg:space-x-12 items-center flex-grow lg:relative right-12'>
+        <div className="flex flex-col text-center leading-[60px] my-12 text-xl lg:flex-row lg:text-sm lg:text-h2-color lg:gap-12 xl:">
+            <div className='flex flex-col lg:flex-row justify-between lg:space-x-8 items-center flex-grow lg:relative right-12 xl:space-x-10'>
                 <Link href="/" className=" hover:text-primary-color transition duration-150 hover:ease-in border-primary-color">
                     HOME
                 </Link>
@@ -79,11 +79,11 @@ export default function Navbar () {
                 </Link>
             </div>
           
-            <div className="flex flex-col space-y-6 lg:flex lg:flex-row lg:space-x-4 lg:space-y-0 lg:items-center ">
-                <Link href="/login" className="bg-btn-two-color px-4 py-2  text-color-one rounded-sm hover:bg-sky-400 transition duration-150 hover:ease-in text-white">
+            <div className="flex flex-col space-y-6 mt-12 lg:flex lg:flex-row lg:space-x-4 lg:space-y-0 lg:items-center lg:mt-0">
+                <Link href="/login" className="bg-btn-two-color lg:px-4 lg:py-2 rounded-md transition duration-150 hover:ease-in text-white">
                 Login
                 </Link>
-                <Link href="/signup" className=" text-btn-two-color border border-btn-two-color rounded-sm px-4 py-2 transition duration-150 hover:ease-in">
+                <Link href="/signup" className=" text-btn-two-color border border-btn-two-color rounded-md lg:px-4 lg:py-2 transition duration-150 hover:ease-in">
                 Signup
                 </Link>
             </div>
