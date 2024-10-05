@@ -61,7 +61,7 @@ export default function Navbar () {
         </button>
         
         <div className="flex flex-col text-center leading-[60px] my-12 text-xl lg:flex-row lg:text-sm lg:text-h2-color gap-12 ">
-            <div className='flex flex-col lg:flex-row justify-between lg:space-x-8 items-center flex-grow ml-8'>
+            <div className='flex flex-col lg:flex-row justify-between lg:space-x-12 items-center flex-grow  bg-blue-500 lg:relative right-12'>
                 <Link href="/" className=" hover:text-primary-color transition duration-150 hover:ease-in border-primary-color">
                     HOME
                 </Link>
@@ -79,7 +79,7 @@ export default function Navbar () {
                 </Link>
             </div>
           
-            <div className="flex flex-col space-y-6 lg:flex lg:flex-row lg:space-x-4 lg:items-center ">
+            <div className="flex flex-col space-y-6 lg:flex lg:flex-row lg:space-x-4 lg:space-y-0 lg:items-center ">
                 <Link href="/login" className="bg-btn-two-color px-4 py-2  text-color-one rounded-sm hover:bg-sky-400 transition duration-150 hover:ease-in text-white">
                 Login
                 </Link>
@@ -88,25 +88,6 @@ export default function Navbar () {
                 </Link>
             </div>
         </div>
-
-        {/* <div className="flex flex-col lg:flex-row lg:static lg:items-center lg:gap-8">
-          <Link href="/login" className="rounded-md hover:bg-sky-400 transition duration-150 hover:ease-in text-center text-lg">
-            Login
-          </Link>
-          <Link href="/signup" className="bg-color-one text-primary-color rounded-md   hover:border-sky-400 hover:text-sky-400 transition duration-150 hover:ease-in text-lg">
-            Signup
-          </Link>
-        </div> */}
-      </div>
-
-
-      <div className="hidden lg:flex lg:flex-row lg:space-x-4 lg:static lg:items-center ">
-        {/* <Link href="/login" className="bg-btn-two-color px-4 py-1  text-color-one rounded-sm hover:bg-sky-400 transition duration-150 hover:ease-in text-white">
-          Login
-        </Link>
-        <Link href="/signup" className=" text-btn-two-color border-2 border-btn-two-color rounded-sm px-4 py-1 transition duration-150 hover:ease-in">
-          Signup
-        </Link> */}
       </div>
     </nav>
   )

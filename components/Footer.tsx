@@ -116,7 +116,7 @@ export default function Footer() {
           </section>
         </div>
 
-        <section className="flex flex-col justify-center lg:flex-row lg:items-center lg:justify-between lg:gap-12 w-full lg:max-w-5xl">
+        <section className="flex flex-col justify-center lg:flex-row lg:items-center lg:justify-center lg:gap-12 w-full lg:max-w-5xl">
           <form className="flex flex-col self-center  mt-16 lg:mt-0">
             <label className="text-text-color-one">Subscribe to our Newsletter</label>
             <input type="text" placeholder="Email" className="outline-none border-b pt-4 placeholder:text-xs"/>
