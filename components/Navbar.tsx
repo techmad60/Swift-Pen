@@ -61,7 +61,7 @@ export default function Navbar () {
         </button>
         
         <div className="flex flex-col text-center leading-[60px] my-12 text-xl lg:flex-row lg:text-sm lg:text-h2-color gap-12 ">
-            <div className='flex flex-col lg:flex-row justify-between lg:space-x-12 items-center flex-grow  bg-blue-500 lg:relative right-12'>
+            <div className='flex flex-col lg:flex-row justify-between lg:space-x-12 items-center flex-grow lg:relative right-12'>
                 <Link href="/" className=" hover:text-primary-color transition duration-150 hover:ease-in border-primary-color">
                     HOME
                 </Link>
