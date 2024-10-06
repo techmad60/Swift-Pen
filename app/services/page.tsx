@@ -61,7 +61,7 @@ export default function ServicePage () {
                             />
                             <h2 className="text-text-color-one text-center text-lg lg:text-start tracking-widest font-medium">BOOK COVER DESIGN</h2>
                         </div>
-                        <p className="px-6 py-4">Your book's cover is its first impression. Our design team creates visually appealing and marketable covers that entice readers to pick up your book.</p>
+                        <p className="px-6 py-4">Your book&apos;s cover is its first impression. Our design team creates visually appealing and marketable covers that entice readers to pick up your book.</p>
                         <p className="px-6 py-4"><span className="text-text-color-one">Custom Cover Design</span> <br /> Bespoke designs that reflect your book&apos;s genre and tone.</p>
                         <p className="px-6 py-4"><span className="text-text-color-one">E-Book & Print Ready</span> <br /> High-resolution designs formatted for both digital and physical distribution.</p>
                         <p className="px-6 py-4"><span className="text-text-color-one">Pricing</span> <br /> Starting at [Insert Price]</p>
