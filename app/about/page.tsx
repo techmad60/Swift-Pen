@@ -19,7 +19,7 @@ export default function AboutPage () {
                     
                    <div>
                        <h1 className={`${merri.className} text-2xl mt-6 mb-2 lg:mt-0`}>How do we achieve this?</h1>
-                        <p className="">It&apos;s simple. We&apos;ve streamlined the freelancing process so you don't have to worry about sorting through countless freelancers to find the right fit. </p>
+                        <p className="">It&apos;s simple. We&apos;ve streamlined the freelancing process so you don&apos;t have to worry about sorting through countless freelancers to find the right fit. </p>
                         <p className="">When you choose Swift Pen, our dedicated administrator, Mr. Raphael, takes the lead. He carefully matches your project with the best freelancer from our pool of talented professionals, ensuring that you receive the highest quality of service.</p>
                    </div>
                    
