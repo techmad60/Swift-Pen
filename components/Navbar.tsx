@@ -68,7 +68,7 @@ export default function Navbar () {
                 <Link href="/about" className="  hover:text-primary-color transition duration-150 hover:ease-in border-primary-color">
                     ABOUT US
                 </Link>
-                <Link href="/contact" className="  hover:text-primary-color transition duration-150 hover:ease-in border-primary-color">
+                <Link href="/services" className="  hover:text-primary-color transition duration-150 hover:ease-in border-primary-color">
                     SERVICES
                 </Link>
                 <Link href="/contact" className="  hover:text-primary-color transition duration-150 hover:ease-in border-primary-color">
