@@ -10,7 +10,7 @@ export default function AboutPage () {
                 <div className="text-xs px-8 text-center text-text-color-two lg:text-start lg:px-0 lg:text-lg flex flex-col lg:grid lg:grid-cols-2 lg:gap-8 w-full max-w-5xl self-center xl:gap-24 lg:mt-4" id="text-container">
                     <div className="">
                         <p className=""> Our goal is to ensure that your projects are completed on time, within budget, and to your exact specifications.
-                        When you partner with us, you&apos;re not just hiring a freelancer; you're gaining a team dedicated to your project's success. We guarantee that your work will be delivered on time, meet your standards, and exceed your expectations—all without breaking the bank. </p>
+                        When you partner with us, you&apos;re not just hiring a freelancer; you&apos;re gaining a team dedicated to your project&apos;s success. We guarantee that your work will be delivered on time, meet your standards, and exceed your expectations—all without breaking the bank. </p>
 
                         <p className="py-4 ">
                         Swift Pen is here to make your life easier. Let us take the burden off your shoulders, so you can focus on what matters most. Choose us, and experience the difference of working with a team that truly cares about your success.

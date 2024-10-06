@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { changa } from "@/fonts/fonts";
 export default function Founder() {
     return (
         <section className="flex flex-col items-center lg:flex-row lg:justify-center lg:gap-12 xl:gap-24">
