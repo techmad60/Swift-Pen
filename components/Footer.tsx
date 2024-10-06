@@ -116,14 +116,14 @@ export default function Footer() {
           </section>
         </div>
 
-        <section className="flex flex-col justify-center lg:flex-row lg:items-center lg:justify-center gap-36 w-full lg:max-w-5xl">
+        <section className="flex flex-col justify-center lg:flex-row lg:items-center lg:justify-center lg:gap-[30rem] w-full lg:max-w-5xl">
           <form className="flex flex-col self-center  mt-16 lg:mt-24">
             <label className="text-text-color-one">Subscribe to our Newsletter</label>
             <input type="text" placeholder="Email" className="outline-none border-b pt-4 placeholder:text-xs"/>
             <button className="flex items-center self-end text-white p-2 gap-2 rounded-sm bg-[#786F21] mt-4">Send <span>
           <FaArrowRight /></span></button>
           </form>
-          <div className="self-center mt-12 lg:hidden">
+          <div className="self-center mt-12 ">
             <Image 
               src={"/images/brownLogo.svg"}
               width={250}
