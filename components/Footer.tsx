@@ -38,34 +38,34 @@ export default function Footer() {
           </section>
           <section className="flex flex-col">
             <h2 className="text-btn-one-color  text-sm font-medium pt-4">Contact Us</h2>
-              <div className="flex flex-col space-y-6 ">
-                <div className="flex items-center gap-4 mt-4">
-                  <Image 
-                    src={"/images/location.svg"}
-                    width={24}
-                    height={24}
-                    alt="Hero Image"
-                  />
-                  <p className="text-btn-one-color text-xs">2972 Westheimer Rd. Santa Ana, Illinois 85486 </p>
-                </div>
-                <div className="flex items-center gap-4">
-                  <Image 
-                    src={"/images/phone.svg"}
-                    width={20}
-                    height={20}
-                    alt="Hero Image"
-                  />
-                  <p className="text-btn-one-color text-xs">(684) 555-0102</p>
-                </div>
-                <div className="flex items-center gap-4">
-                  <Image 
-                    src={"/images/mail.svg"}
-                    width={20}
-                    height={20}
-                    alt="Hero Image"
-                  />
-                  <p className="text-btn-one-color text-xs">alma.lawson@example.com</p>
-                </div>
+            <div className="flex flex-col space-y-6 ">
+              <div className="flex items-center gap-4 mt-4">
+                <Image 
+                  src={"/images/location.svg"}
+                  width={24}
+                  height={24}
+                  alt="Hero Image"
+                />
+                <p className="text-btn-one-color text-xs">2972 Westheimer Rd. Santa Ana, Illinois 85486 </p>
+              </div>
+              <div className="flex items-center gap-4">
+                <Image 
+                  src={"/images/phone.svg"}
+                  width={20}
+                  height={20}
+                  alt="Hero Image"
+                />
+                <p className="text-btn-one-color text-xs">(684) 555-0102</p>
+              </div>
+              <div className="flex items-center gap-4">
+                <Image 
+                  src={"/images/mail.svg"}
+                  width={20}
+                  height={20}
+                  alt="Hero Image"
+                />
+                <p className="text-btn-one-color text-xs">alma.lawson@example.com</p>
+              </div>
             </div>
           </section>
           <section className="flex flex-col">

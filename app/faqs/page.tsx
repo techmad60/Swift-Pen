@@ -6,7 +6,7 @@ export default function Faqs() {
         <>
             <Header />
             <section className={`${montsy.className} bg-dot-pattern lg:px-16 flex flex-col justify-center items-center w-full self-center`}>
-                <div className="bg-[#E9E3AF] py-4 rounded-md">
+                <div className="bg-[#F4F1D7] py-4 rounded-md">
                     <div>
                         <h2 className="text-h2-color tracking-[0.4em] text-xs pt-4 text-center">Get answers</h2>
                         <p className={`${merri.className} text-text-color-five text-center lg:text-2xl`}>Frequently asked Questions</p>

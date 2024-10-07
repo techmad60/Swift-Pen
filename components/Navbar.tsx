@@ -62,19 +62,19 @@ export default function Navbar () {
         
         <div className="flex flex-col text-center leading-[60px] my-12 text-xl lg:flex-row lg:text-sm lg:text-h2-color lg:gap-12 xl:">
             <div className='flex flex-col lg:flex-row justify-between lg:space-x-8 items-center flex-grow lg:relative right-12 xl:space-x-10'>
-                <Link href="/" className=" hover:text-primary-color transition duration-150 hover:ease-in border-primary-color">
+                <Link href="/" className=" hover:text-[#786F21] transition duration-150 hover:ease-in hover:border-b border-[#786F21]">
                     HOME
                 </Link>
-                <Link href="/about" className="  hover:text-primary-color transition duration-150 hover:ease-in border-primary-color">
+                <Link href="/about" className="hover:text-[#786F21] transition duration-150 hover:ease-in hover:border-b border-[#786F21]">
                     ABOUT US
                 </Link>
-                <Link href="/services" className="  hover:text-primary-color transition duration-150 hover:ease-in border-primary-color">
+                <Link href="/services" className="hover:text-[#786F21] transition duration-150 hover:ease-in hover:border-b border-[#786F21]">
                     SERVICES
                 </Link>
-                <Link href="/faqs" className="  hover:text-primary-color transition duration-150 hover:ease-in border-primary-color">
+                <Link href="/faqs" className="hover:text-[#786F21] transition duration-150 hover:ease-in hover:border-b border-[#786F21]">
                     FAQS
                 </Link>
-                <Link href="/contact" className="  hover:text-primary-color transition duration-150 hover:ease-in border-primary-color">
+                <Link href="/contact" className="hover:text-[#786F21] transition duration-150 hover:ease-in hover:border-b border-[#786F21]">
                     CONTACT US
                 </Link>
             </div>
