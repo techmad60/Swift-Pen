@@ -1,7 +1,6 @@
 import Header from "@/components/Header";
 import { montsy, merri } from "@/fonts/fonts";
 import Image from "next/image";
-import { FaArrowRight } from "react-icons/fa";
 export default function Faqs() {
     return (
         <>
