@@ -47,7 +47,7 @@ export default function Faqs() {
                                 />
                                 <h2 className="text-text-color-one text-center text-lg lg:text-start tracking-widest font-medium">  HOW LONG DOES IT TAKE TO COMPLETE A GHOST WRITING PROJECT?</h2>
                             </div>
-                            <p className="px-6 py-4">The timeline for ghostwriting varies depending on the project's scope, such as the length of the book and the amount of research required. On average, a full-length book can take anywhere from 3 to 12 months to complete. We provide a more specific timeline during the consultation phase.
+                            <p className="px-6 py-4">The timeline for ghostwriting varies depending on the project&apos;s scope, such as the length of the book and the amount of research required. On average, a full-length book can take anywhere from 3 to 12 months to complete. We provide a more specific timeline during the consultation phase.
                             </p>
                             <div className="flex items-center w-full gap-4 justify-center mt-4 lg:justify-start">
                                 <Image 
@@ -58,7 +58,7 @@ export default function Faqs() {
                                 />
                                 <h2 className="text-text-color-one text-center text-lg lg:text-start tracking-widest font-medium"> WHAT IS THE COSTS OF YOUR SERVICES?</h2>
                             </div>
-                            <p className="px-6 py-4">Our pricing depends on the type and scope of the project. Ghostwriting projects are typically billed at a flat rate, which we determine based on factors like length and complexity. Editing, cover design, and other services have varying rates, often starting at [Insert Price]. We’re happy to provide a detailed quote after an initial discussion of your needs.
+                            <p className="px-6 py-4">Our pricing depends on the type and scope of the project. Ghostwriting projects are typically billed at a flat rate, which we determine based on factors like length and complexity. Editing, cover design, and other services have varying rates, often starting at [Insert Price]. We&apos;re happy to provide a detailed quote after an initial discussion of your needs.
                             </p>
                             <div className="flex items-center w-full gap-4 justify-center mt-4 lg:justify-start">
                                 <Image 
@@ -129,9 +129,9 @@ export default function Faqs() {
                                     height={12}
                                     alt="Hero Image"
                                     />
-                                    <h2 className="text-text-color-one text-center text-lg lg:text-start tracking-widest font-medium">What if I'm not satisfied with the final product?</h2>
+                                    <h2 className="text-text-color-one text-center text-lg lg:text-start tracking-widest font-medium">What if I&apos;m not satisfied with the final product?</h2>
                                 </div>
-                                <p className="px-6 py-4">Our goal is to exceed your expectations. We work closely with you throughout the process to ensure you’re happy with the final product. We offer revisions at various stages, and we won't consider a project complete until you’re fully satisfied.
+                                <p className="px-6 py-4">Our goal is to exceed your expectations. We work closely with you throughout the process to ensure you&apos;re happy with the final product. We offer revisions at various stages, and we won&apos;t consider a project complete until you&apos;re fully satisfied.
                                 </p>
                             </div>
                             <div className="flex flex-col text-center text-slate-600 text-sm lg:text-start">
@@ -144,7 +144,7 @@ export default function Faqs() {
                                     />
                                     <h2 className="text-text-color-one text-center text-lg lg:text-start tracking-widest font-medium">HOW DO I GET STARTED?</h2>
                                 </div>
-                                <p className="px-6 py-4">Getting started is easy! Simply contact us through our website, and we’ll schedule an initial consultation to discuss your project in detail. After that, we’ll provide a proposal outlining the scope, timeline, and cost of the project. Once you approve, we’ll begin the work.
+                                <p className="px-6 py-4">Getting started is easy! Simply contact us through our website, and we&apos;ll schedule an initial consultation to discuss your project in detail. After that, we&apos;ll provide a proposal outlining the scope, timeline, and cost of the project. Once you approve, we&apos;ll begin the work.
                                 </p>
                             </div>
                         </div>
