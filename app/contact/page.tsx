@@ -18,7 +18,7 @@ export default function ContactPage () {
                         width={100}
                         height={100}
                         alt="Hero Image"
-                        />
+                    />
                     <form className="flex flex-col justify-center items-center gap-2 lg:items-start lg:justify-start w-full">
                         <label htmlFor="Name"></label>
                         <input type="text" placeholder="Name" className="outline-none border-b p-2 placeholder:text-xs rounded-md w-full"/>
