@@ -18,7 +18,7 @@ export default function ServicePage () {
                         height={12}
                         alt="Hero Image"
                         />
-                        <h2 className="text-text-color-one text-center text-lg lg:text-start tracking-widest font-medium">GHOST WRITING SERVICES</h2>
+                        <h2 className="text-text-color-one text-center text-lg lg:text-start tracking-widest font-medium" id="ghost-writing">GHOST WRITING SERVICES</h2>
                     </div>
                     <p className="px-6 py-4">Bring your story to life without lifting a pen. Our professional ghostwriting services are designed to transform your ideas into well-crafted narratives that resonate with your target audience.</p>
                     <p className="px-6 py-4"><span className="text-text-color-one font-medium">Full-Length Books</span> <br /> From fiction to non-fiction, we deliver complete books that capture your unique voice.</p>
@@ -37,7 +37,7 @@ export default function ServicePage () {
                             height={12}
                             alt="Hero Image"
                             />
-                            <h2 className="text-text-color-one text-center text-lg lg:text-start tracking-widest font-medium">BOOK EDITING SERVICES</h2>
+                            <h2 className="text-text-color-one text-center text-lg lg:text-start tracking-widest font-medium" id="book-editing">BOOK EDITING SERVICES</h2>
                         
                         </div>
                         <p className="px-6 py-4">Perfect your manuscript with our thorough editing services. We offer various levels of editing to meet your specific needs, ensuring your work is polished and publication-ready.</p>
@@ -59,7 +59,7 @@ export default function ServicePage () {
                             height={12}
                             alt="Hero Image"
                             />
-                            <h2 className="text-text-color-one text-center text-lg lg:text-start tracking-widest font-medium">BOOK COVER DESIGN</h2>
+                            <h2 className="text-text-color-one text-center text-lg lg:text-start tracking-widest font-medium" id="book-cover">BOOK COVER DESIGN</h2>
                         </div>
                         <p className="px-6 py-4">Your book&apos;s cover is its first impression. Our design team creates visually appealing and marketable covers that entice readers to pick up your book.</p>
                         <p className="px-6 py-4"><span className="text-text-color-one font-medium">Custom Cover Design</span> <br /> Bespoke designs that reflect your book&apos;s genre and tone.</p>

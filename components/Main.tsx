@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { montsy, merri, changa } from "@/fonts/fonts";
 import { FaArrowRight } from "react-icons/fa";
+import Link from "next/link";
 
 export default function Main () {
     return (
@@ -43,60 +44,73 @@ export default function Main () {
                         <p className={`${changa.className} text-4xl pl-12 leading-none lg:text-8xl lg:pl-0`}>&quot;</p>
                         <p className="text-xs px-8 text-center text-text-color-two lg:text-start lg:px-0 lg:text-lg lg:w-[470px]">At Swift Pen, we simplify the freelancing process, ensuring you get reliable, high-quality services in ghostwriting, book editing, cover design, and more. With our dedicated administrator, Mr Raphael, we match your project with the best freelancer from our talented pool, guaranteeing timely delivery, exceptional quality, and budget-friendly solutions. Trust Swift Pen to bring your project to life.</p>
                     </div>
-                    <button className="text-xs text-text-color-three border-b border-text-color-three pb-2 mt-8 lg:self-end lg:text-lg">Read more</button> 
+                    <Link href="/about">
+                        <button className="text-xs text-text-color-three border-b border-text-color-three pb-2 mt-8 lg:self-end lg:text-lg">Read more</button> 
+                    </Link>
+                    
                 </div>
             </section>
             
 
             <section className="flex flex-col justify-center items-center py-8 px-6 bg-dot-pattern lg:px-16">
                 <h2 className="text-h2-color tracking-[0.4em] text-xs pt-4">Our Services</h2>
-                <p className="text-text-color-five lg:text-2xl">Experience the difference</p>
-                <div className="py-4 px-6 flex flex-col space-y-12 w-full lg:flex-row lg:space-y-0 lg:mt-12 max-w-5xl space-x-4">
-                    <div className="flex flex-col items-center justify-center gap-4 mt-4 w-full bg-white p-3 self-center shadow-md lg:mt-0 h-[18rem] rounded-md">
-                        <div className="flex items-center w-full gap-4 justify-center mt-4">
-                            <Image 
-                            src={"/images/bullet.svg"}
-                            width={12}
-                            height={12}
-                            alt="Hero Image"
-                            />
-                            <p className="flex items-center gap-4 text-text-color-four">Ghost Writing </p>
+                <p className="text-text-color-five lg:text-2xl">Experience the Difference</p>
+                <div className="py-4 px-6 flex flex-col space-y-12 w-full lg:grid lg:grid-cols-3 lg:space-y-0 lg:mt-12 max-w-5xl space-x-4">
+
+                    <Link href="/services#ghost-writing">
+                        <div className="flex flex-col items-center justify-center gap-4 mt-4 w-full bg-white p-3 self-center shadow-md lg:mt-0 h-[18rem] rounded-md duration-300 hover:bg-yellow-100">
+                            <div className="flex items-center w-full gap-4 justify-center mt-4">
+                                <Image 
+                                src={"/images/bullet.svg"}
+                                width={12}
+                                height={12}
+                                alt="Hero Image"
+                                />
+                                <p className="flex items-center gap-4 text-text-color-four">Ghost Writing </p>
+                            </div>
+                            <p className="text-center px-4 text-text-color-four mt-2">We craft stunning book covers that grab attention and perfectly display the essence of your story. Get custom design! </p>
+                            <div className="flex self-end h-full text-[#15B7B2] items-end">
+                                <FaArrowRight />
+                            </div>
                         </div>
-                        <p className="text-center px-4 text-text-color-four mt-2">We craft stunning book covers that grab attention and perfectly display the essence of your story. Get custom design! </p>
-                        <div className="flex self-end h-full text-[#15B7B2] items-end">
-                            <FaArrowRight />
+                    </Link>
+                    
+                    <Link href="/services#book-cover">
+                        <div className="flex flex-col items-center justify-center gap-4 mt-4 w-full bg-white p-4 self-center shadow-md lg:mt-0 h-[18rem] rounded-md duration-300 hover:bg-yellow-100">
+                            <div className="flex items-center w-full gap-4 justify-center mt-4">
+                                <Image 
+                                src={"/images/bullet.svg"}
+                                width={12}
+                                height={12}
+                                alt="Hero Image"
+                                />
+                                <p className="flex items-center gap-4 text-text-color-four">Book Cover Design </p>
+                            </div>
+                            <p className="text-center px-4 text-text-color-four mt-2">Tell your story with our expert ghostwriting services. We write compelling narratives, articles and books that reflect your own unique perspective and vision </p>
+                            <div className="flex self-end h-full text-[#15B7B2] items-end">
+                                <FaArrowRight />
+                            </div>
                         </div>
-                    </div>
-                    <div className="flex flex-col items-center justify-center gap-4 mt-4 w-full bg-white p-4 self-center shadow-md lg:mt-0 h-[18rem] rounded-md">
-                        <div className="flex items-center w-full gap-4 justify-center mt-4">
-                            <Image 
-                            src={"/images/bullet.svg"}
-                            width={12}
-                            height={12}
-                            alt="Hero Image"
-                            />
-                            <p className="flex items-center gap-4 text-text-color-four">Book Cover Design </p>
+                    </Link>
+                    
+                    <Link href="/services#book-editing">
+                        <div className="flex flex-col items-center justify-center gap-4 mt-4 w-full bg-white p-4 self-center shadow-md lg:mt-0 h-[18rem] rounded-md duration-300 hover:bg-yellow-100">
+                            <div className="flex items-center w-full gap-4 justify-center mt-4">
+                                <Image 
+                                src={"/images/bullet.svg"}
+                                width={12}
+                                height={12}
+                                alt="Hero Image"
+                                />
+                                <p className="flex items-center gap-4 text-text-color-four">Book Editing </p>
+                            </div>
+                            <p className="text-center px-4 text-text-color-four mt-2">Fine-tune your manuscript with our expert editing Services </p>
+                            <div className="flex self-end h-full text-[#15B7B2] items-end">
+                                <FaArrowRight />
+                            </div>
                         </div>
-                        <p className="text-center px-4 text-text-color-four mt-2">Tell your story with our expert ghostwriting services. We write compelling narratives, articles and books that reflect your own unique perspective and vision </p>
-                        <div className="flex self-end h-full text-[#15B7B2] items-end">
-                            <FaArrowRight />
-                        </div>
-                    </div>
-                    <div className="flex flex-col items-center justify-center gap-4 mt-4 w-full bg-white p-4 self-center shadow-md lg:mt-0 h-[18rem] rounded-md">
-                        <div className="flex items-center w-full gap-4 justify-center mt-4">
-                            <Image 
-                            src={"/images/bullet.svg"}
-                            width={12}
-                            height={12}
-                            alt="Hero Image"
-                            />
-                            <p className="flex items-center gap-4 text-text-color-four">Book Editing </p>
-                        </div>
-                        <p className="text-center px-4 text-text-color-four mt-2">Fine-tune your manuscript with our expert editing Services </p>
-                        <div className="flex self-end h-full text-[#15B7B2] items-end">
-                            <FaArrowRight />
-                        </div>
-                    </div>
+                    </Link>
+                    
                 </div>
 
                 <div className="flex flex-col justify-center items-center mt-20 w-full">
@@ -132,7 +146,7 @@ export default function Main () {
             <section className="bg-btn-two-color">
                 <div className="flex flex-col items-center bg-curved-pattern py-12">
                     <h2 className="text-text-color-two tracking-[0.4em] text-xs ">TESTIMONIALS</h2>
-                    <p className="text-white">What they say about us</p>
+                    <p className="text-white lg:text-2xl">What they say about us</p>
                     <div className="text-h2-color flex flex-col items-center w-full lg:flex-row space-x-4 lg:justify-center">
                         <div className="bg-white items-center flex flex-col w-[259px] h-[326px] rounded-md mt-12 relative px-8  ">
                             <div className="rounded-full p-2 flex justify-center items-center bg-green-950  w-fit absolute -top-7">
