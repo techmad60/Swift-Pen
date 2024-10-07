@@ -4,12 +4,17 @@ import Link from "next/link";
 import Image from "next/image";
 import { montsy } from "@/fonts/fonts";
 import { FaTimes } from 'react-icons/fa';
+import { usePathname } from 'next/navigation';
 
 export default function Navbar () {
   const [isNavOpen, setIsNavOpen] = useState(false);
+  const pathname = usePathname()
   const handleToggleNav = () => {
     setIsNavOpen(!isNavOpen);
   };
+  // Function to determine if a link is active
+  const isActiveLink = (href: string) => pathname === href;
+  
 
   useEffect(() => {
     // Add or remove a class to the body and html to disable/enable scrolling
@@ -29,6 +34,8 @@ export default function Navbar () {
       html.style.overflow = 'visible';
     };
   }, [isNavOpen])
+   
+
 
   return (
     <nav className={`${montsy.className} lg:flex justify-between lg:self-center items-center`} >
@@ -38,8 +45,8 @@ export default function Navbar () {
             className=""
             src={"/images/logo.svg"}
             alt="Swiftpen-logo"
-            width={80}
-            height={19}/>
+            width={90}
+            height={40}/>
         </div>
         <div className="cursor-pointer lg:hidden" onClick={handleToggleNav}>
           <Image 
@@ -61,23 +68,23 @@ export default function Navbar () {
         </button>
         
         <div className="flex flex-col text-center leading-[60px] my-12 text-xl lg:flex-row lg:text-sm lg:text-h2-color lg:gap-12 xl:">
-            <div className='flex flex-col lg:flex-row justify-between lg:space-x-24 items-center flex-grow xl:space-x-32'>
-                <Link href="/" className=" hover:text-[#786F21] transition duration-150 hover:ease-in hover:border-b border-[#786F21]">
-                    HOME
-                </Link>
-                <Link href="/about" className="hover:text-[#786F21] transition duration-150 hover:ease-in hover:border-b border-[#786F21]">
-                    ABOUT US
-                </Link>
-                <Link href="/services" className="hover:text-[#786F21] transition duration-150 hover:ease-in hover:border-b border-[#786F21]">
-                    SERVICES
-                </Link>
-                <Link href="/faqs" className="hover:text-[#786F21] transition duration-150 hover:ease-in hover:border-b border-[#786F21]">
-                    FAQS
-                </Link>
-                <Link href="/contact" className="hover:text-[#786F21] transition duration-150 hover:ease-in hover:border-b border-[#786F21]">
-                    CONTACT US
-                </Link>
-            </div>
+          <div className='flex flex-col lg:flex-row justify-between lg:space-x-24 items-center flex-grow xl:space-x-32'>
+              <Link href="/" className={`${isActiveLink('/') ? 'text-[#786F21] border-b border-[#786F21]' : ''} hover:text-[#786F21] transition duration-150 hover:ease-in`}>
+                HOME
+              </Link>
+              <Link href="/about" className={`${isActiveLink('/about') ? 'text-[#786F21] border-b border-[#786F21]' : ''} hover:text-[#786F21] transition duration-150 hover:ease-in`}>
+                ABOUT US
+              </Link>
+              <Link href="/services" className={`${isActiveLink('/services') ? 'text-[#786F21] border-b border-[#786F21]' : ''} hover:text-[#786F21] transition duration-150 hover:ease-in`}>
+                SERVICES
+              </Link>
+              <Link href="/faqs" className={`${isActiveLink('/faqs') ? 'text-[#786F21] border-b border-[#786F21]' : ''} hover:text-[#786F21] transition duration-150 hover:ease-in`}>
+                FAQS
+              </Link>
+              <Link href="/contact" className={`${isActiveLink('/contact') ? 'text-[#786F21] border-b border-[#786F21]' : ''} hover:text-[#786F21] transition duration-150 hover:ease-in`}>
+                CONTACT US
+              </Link>
+          </div>
           
             {/* <div className="flex flex-col space-y-6 mt-12 lg:flex lg:flex-row lg:space-x-4 lg:space-y-0 lg:items-center lg:mt-0">
               <Link href="/login" className="bg-btn-two-color lg:px-4 lg:py-2 rounded-md transition duration-150 hover:ease-in text-white">

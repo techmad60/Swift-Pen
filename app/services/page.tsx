@@ -25,7 +25,6 @@ export default function ServicePage () {
                     <p className="px-6 py-4"><span className="text-text-color-one font-medium">Autobiographies & Memoirs</span> <br /> Share your life&apos;s journey with expertly written and compelling narratives.
                     </p>
                     <p className="px-6 py-4"><span className="text-text-color-one font-medium">Business Writing</span> <br /> From thought leadership articles to white papers, we help you establish your authority in your field.</p>
-                    <p className="px-6 py-4"><span className="text-text-color-one font-medium">Pricing</span> <br /> Custom packages available</p>
                 </div>
                 
                 <div>
@@ -48,7 +47,6 @@ export default function ServicePage () {
 
                         <p className="px-6 py-4"><span className="text-text-color-one font-medium">Proofreading</span> <br /> Eliminate minor errors to ensure a clean, professional final product.
                         </p>
-                        <p className="px-6 py-4">Pricing: Starting at [Insert Price]</p>
                     </div>
 
                     <div  className="flex flex-col text-center text-slate-600 text-sm lg:text-start">
@@ -64,7 +62,6 @@ export default function ServicePage () {
                         <p className="px-6 py-4">Your book&apos;s cover is its first impression. Our design team creates visually appealing and marketable covers that entice readers to pick up your book.</p>
                         <p className="px-6 py-4"><span className="text-text-color-one font-medium">Custom Cover Design</span> <br /> Bespoke designs that reflect your book&apos;s genre and tone.</p>
                         <p className="px-6 py-4"><span className="text-text-color-one font-medium">E-Book & Print Ready</span> <br /> High-resolution designs formatted for both digital and physical distribution.</p>
-                        <p className="px-6 py-4"><span className="text-text-color-one font-medium">Pricing</span> <br /> Starting at [Insert Price]</p>
                     </div>
                 </div>
             </div>
