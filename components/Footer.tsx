@@ -1,20 +1,23 @@
-import Image from "next/image"
-import { FaArrowRight } from "react-icons/fa"
+import Image from "next/image";
+import Link from "next/link";
+//import { FaArrowRight } from "react-icons/fa"
 export default function Footer() {
     return (
         <footer className="px-6 py-8 space-y-6 flex flex-col lg:px-16 lg:items-center">
-        <div className="space-y-6 lg:grid grid-cols-4 lg:gap-8 max-w-5xl lg:space-y-0 lg:justify-items-center w-full">
+        <div className="space-y-6 lg:grid grid-cols-3 lg:gap-8 max-w-5xl lg:space-y-0 lg:justify-items-center w-full">
           <section className="flex flex-col">
-            <h2 className="text-btn-one-color  text-sm font-medium pt-4">Our Services</h2>
+            <h2 className="text-btn-one-color text-sm font-medium pt-4 lg:text-center">Our Services</h2>
               <div className="flex flex-col space-y-6 ">
-                <div className="flex items-center gap-4 mt-4">
+                <div className="flex items-center gap-4  mt-4">
                   <Image 
                     src={"/images/bullet-brown.svg"}
                     width={20}
                     height={20}
                     alt="Hero Image"
                   />
-                  <p className="text-btn-one-color text-xs">Ghost Writing</p>
+                  <Link href="/services#ghost-writing">
+                    <p className="text-btn-one-color text-xs duration-300 hover:text-yellow-700">Ghost Writing</p>
+                  </Link>
                 </div>
                 <div className="flex items-center gap-4">
                   <Image 
@@ -23,8 +26,12 @@ export default function Footer() {
                     height={20}
                     alt="Hero Image"
                   />
-                  <p className="text-btn-one-color text-xs">Book cover Design</p>
+                  <Link href ="/services#book-cover">
+                    <p className="text-btn-one-color text-xs duration-300 hover:text-yellow-700 ">Book Cover Design</p>
+                  </Link>
+                  
                 </div>
+                
                 <div className="flex items-center gap-4">
                   <Image 
                     src={"/images/bullet-brown.svg"}
@@ -32,12 +39,15 @@ export default function Footer() {
                     height={20}
                     alt="Hero Image"
                   />
-                  <p className="text-btn-one-color text-xs">Book Editing</p>
+                  <Link href="/services#book-editing">
+                      <p className="text-btn-one-color text-xs duration-300 hover:text-yellow-700">Book Editing</p>
+                  </Link>
+                 
                 </div>
             </div>
           </section>
           <section className="flex flex-col">
-            <h2 className="text-btn-one-color  text-sm font-medium pt-4">Contact Us</h2>
+            <h2 className="text-btn-one-color text-sm font-medium pt-4 lg:text-center">Contact Us</h2>
             <div className="flex flex-col space-y-6 ">
               <div className="flex items-center gap-4 mt-4">
                 <Image 
@@ -69,7 +79,7 @@ export default function Footer() {
             </div>
           </section>
           <section className="flex flex-col">
-            <h2 className="text-btn-one-color  text-sm font-medium pt-4">Follow Us</h2>
+            <h2 className="text-btn-one-color text-sm font-medium pt-4 lg:text-center">Follow Us</h2>
               <div className="flex flex-col space-y-6 ">
                 <div className="flex items-center gap-4 mt-4">
                   <Image 
@@ -91,7 +101,7 @@ export default function Footer() {
                 </div>
             </div>
           </section>
-          <section className="flex flex-col">
+          {/* <section className="flex flex-col">
             <h2 className="text-btn-one-color  text-sm font-medium pt-4">Get our App on</h2>
               <div className="flex flex-col space-y-4 ">
                 <div className="flex items-center gap-4 mt-4">
@@ -113,16 +123,16 @@ export default function Footer() {
                   <p className="text-btn-one-color text-xs">Appstore</p>
                 </div>
             </div>
-          </section>
+          </section> */}
         </div>
 
         <section className="flex flex-col justify-center lg:flex-row lg:items-center lg:justify-center lg:gap-[20rem] w-full lg:max-w-5xl">
-          <form className="flex flex-col self-center  mt-16 lg:mt-24">
+          {/* <form className="flex flex-col self-center  mt-16 lg:mt-24">
             <label className="text-text-color-one">Subscribe to our Newsletter</label>
             <input type="text" placeholder="Email" className="outline-none border-b pt-4 placeholder:text-xs"/>
             <button className="flex items-center self-end text-white p-2 gap-2 rounded-sm bg-[#786F21] mt-4">Send <span>
           <FaArrowRight /></span></button>
-          </form>
+          </form> */}
           <div className="self-center mt-12 ">
             <Image 
               src={"/images/brownLogo.svg"}

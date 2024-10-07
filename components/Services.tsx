@@ -19,7 +19,8 @@ export default function Services () {
                         />
                         <p className="flex items-center gap-4 text-text-color-four">Ghost Writing </p>
                     </div>
-                    <p className="text-center px-4 text-text-color-four mt-2">We craft stunning book covers that grab attention and perfectly display the essence of your story. Get custom design! </p>
+                    <p className="text-center px-4 text-text-color-four mt-2">Tell your story with our expert ghostwriting services. We write compelling narratives, articles and books that reflect your own unique perspective and vision </p>
+                    
                     <div className="flex self-end h-full text-[#15B7B2] items-end">
                         <FaArrowRight />
                     </div>
@@ -34,7 +35,7 @@ export default function Services () {
                         />
                         <p className="flex items-center gap-4 text-text-color-four">Book Cover Design </p>
                     </div>
-                    <p className="text-center px-4 text-text-color-four mt-2">Tell your story with our expert ghostwriting services. We write compelling narratives, articles and books that reflect your own unique perspective and vision </p>
+                    <p className="text-center px-4 text-text-color-four mt-2">We craft stunning book covers that grab attention and perfectly display the essence of your story. Get custom design! </p>
                     <div className="flex self-end h-full text-[#15B7B2] items-end">
                         <FaArrowRight />
                     </div>

@@ -23,7 +23,7 @@ export default function Main () {
 
                     <p className="text-h2-color text-xs px-16 py-4 lg:px-0 lg:w-[250px]">Searching for the perfect freelancer can be overwhelming. Let us simplify things</p>
                     <div className="flex flex-col items-center space-y-4 lg:flex-row lg:space-y-0 lg:gap-4 lg:items-start w-full">
-                        <button className="bg-btn-one-color text-white font-medium text-xs p-3 w-3/4 rounded-md lg:w-fit lg:p-2 lg:text-btn-two-color lg:bg-white">Try a demo</button>
+                        {/* <button className="bg-btn-one-color text-white font-medium text-xs p-3 w-3/4 rounded-md lg:w-fit lg:p-2 lg:text-btn-two-color lg:bg-white">Try a demo</button> */}
                         <button className="bg-btn-two-color text-white font-medium text-xs p-3 w-3/4 rounded-md lg:w-fit lg:p-2 lg:-order-1">Get started</button>
                     </div>
                 
@@ -68,13 +68,13 @@ export default function Main () {
                                 />
                                 <p className="flex items-center gap-4 text-text-color-four">Ghost Writing </p>
                             </div>
-                            <p className="text-center px-4 text-text-color-four mt-2">We craft stunning book covers that grab attention and perfectly display the essence of your story. Get custom design! </p>
+                            <p className="text-center px-4 text-text-color-four mt-2">Tell your story with our expert ghostwriting services. We write compelling narratives, articles and books that reflect your own unique perspective and vision </p>
                             <div className="flex self-end h-full text-[#15B7B2] items-end">
                                 <FaArrowRight />
                             </div>
                         </div>
                     </Link>
-                    
+
                     <Link href="/services#book-cover">
                         <div className="flex flex-col items-center justify-center gap-4 mt-4 w-full bg-white p-4 self-center shadow-md lg:mt-0 h-[18rem] rounded-md duration-300 hover:bg-yellow-100">
                             <div className="flex items-center w-full gap-4 justify-center mt-4">
@@ -86,12 +86,14 @@ export default function Main () {
                                 />
                                 <p className="flex items-center gap-4 text-text-color-four">Book Cover Design </p>
                             </div>
-                            <p className="text-center px-4 text-text-color-four mt-2">Tell your story with our expert ghostwriting services. We write compelling narratives, articles and books that reflect your own unique perspective and vision </p>
+                            <p className="text-center px-4 text-text-color-four mt-2">We craft stunning book covers that grab attention and perfectly display the essence of your story. Get custom design! </p>
                             <div className="flex self-end h-full text-[#15B7B2] items-end">
                                 <FaArrowRight />
                             </div>
                         </div>
                     </Link>
+
+                    
                     
                     <Link href="/services#book-editing">
                         <div className="flex flex-col items-center justify-center gap-4 mt-4 w-full bg-white p-4 self-center shadow-md lg:mt-0 h-[18rem] rounded-md duration-300 hover:bg-yellow-100">
@@ -169,7 +171,7 @@ export default function Main () {
                                 />
                                 <p className="">5.0</p>
                             </div>
-                            <p className="text-sm text-center">Very easy with communication. Competent in providing services. Committed to achievingexcellent results. </p>
+                            <p className="text-sm text-center">Very easy with communication. Competent in providing services. Committed to achieving excellent results. </p>
 
                             <hr className="mt-8 w-full border-gray-300"/>
                             <p className="border-l border-green-800 text-xs mt-6 self-start pl-2">Satisfied Client</p>
@@ -195,7 +197,7 @@ export default function Main () {
                                 />
                                 <p className="">5.0</p>
                             </div>
-                            <p className="text-sm text-center">Very easy with communication. Competent in providing services. Committed to achievingexcellent results. </p>
+                            <p className="text-sm text-center">Very easy with communication. Competent in providing services. Committed to achieving excellent results. </p>
 
                             <hr className="mt-8 w-full border-gray-300"/>
                             <p className="border-l border-green-800 text-xs mt-6 self-start pl-2">Satisfied Client</p>
@@ -221,7 +223,7 @@ export default function Main () {
                                 />
                                 <p className="">5.0</p>
                             </div>
-                            <p className="text-sm text-center">Very easy with communication. Competent in providing services. Committed to achievingexcellent results. </p>
+                            <p className="text-sm text-start">Very easy with communication. Competent in providing services. Committed to achieving excellent results. </p>
 
                             <hr className="mt-8 w-full border-gray-300"/>
                             <p className="border-l border-green-800 text-xs mt-6 self-start pl-2">Satisfied Client</p>
