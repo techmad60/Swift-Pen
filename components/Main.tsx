@@ -1,13 +1,61 @@
+"use client";
+import { useRef } from "react";
 import Image from "next/image";
 import { montsy, merri, changa } from "@/fonts/fonts";
 import { FaArrowRight } from "react-icons/fa";
 import Link from "next/link";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+
+let tl = gsap.timeline();
+gsap.registerPlugin(ScrollTrigger);
 
 export default function Main () {
+    const mainContainer = useRef(null);
+    useGSAP (() => {
+        tl.fromTo('.description', {y: -400,}, {
+            y: 0,
+            scale: 1,
+            rotate: 0,
+            opacity: 1,
+            duration: 1,
+            ease: "bounce",
+            stagger: 0.5,
+        });
+        
+        tl.fromTo('.button', {opacity: 0, scale: 2}, {
+            y: 0,
+            scale: 1,
+            opacity: 1,
+            duration: 1,
+            ease: "bounce",
+            stagger: 0.2,
+        });
+        tl.fromTo('.avatar', {y: 0}, {
+            y: 10,
+            scale: 1,
+            opacity: 1,
+            duration: 0.5,
+            yoyo: true,
+            repeat: -1
+        });
+        tl.fromTo('.button', {opacity: 0, scale: 1.5}, {
+            y: 0,
+            scale: 1,
+            opacity: 1,
+            duration: 1,
+            ease: "bounce",
+            stagger: 0.2,
+            repeat: -1,
+        });
+
+    }, { scope: mainContainer })
     return (
-        <main className="">
+        <main className="" ref={mainContainer}>
             <section className="flex flex-col items-center text-center justify-center py-8 sm:p-8 lg:flex-row-reverse lg:px-16 lg:gap-16 xl:gap-44">
-                <p className={`${montsy.className} text-xs text-h2-color lg:hidden`}>We make things easy</p>
+                <p className={`${montsy.className} text-xs text-h2-color lg:hidden description`}>We make things easy</p>
                 <div className="py-4" >
                     <Image 
                     className="lg:w-[500px]"
@@ -18,20 +66,20 @@ export default function Main () {
                     />
                 </div>
                 <div className="flex flex-col items-center lg:items-start lg:text-start">
-                    <p className={`${montsy.className} text-xs text-h2-color hidden lg:flex lg:text-2xl`}>WE MAKE THINGS EASY</p>
+                    <p className={`${montsy.className} text-xs text-h2-color hidden lg:flex lg:text-2xl description`}>WE MAKE THINGS EASY</p>
                     <h1 className={`${merri.className} text-sm text-h1-color lg:text-5xl`}> Quit the Hunt</h1>
 
-                    <p className="text-h2-color text-xs px-16 py-4 lg:px-0 lg:w-[250px]">Searching for the perfect freelancer can be overwhelming. Let us simplify things</p>
-                    <div className="flex flex-col items-center space-y-4 lg:flex-row lg:space-y-0 lg:gap-4 lg:items-start w-full">
+                    <p className="text-h2-color text-xs px-16 py-3 lg:px-0 lg:w-[250px]">Searching for the perfect freelancer can be overwhelming. Let us simplify things</p>
+                    <div className="flex flex-col items-center space-y-4 lg:flex-row lg:space-y-0 lg:gap-4 lg:items-start">
                         {/* <button className="bg-btn-one-color text-white font-medium text-xs p-3 w-3/4 rounded-md lg:w-fit lg:p-2 lg:text-btn-two-color lg:bg-white">Try a demo</button> */}
-                        <button className="bg-btn-two-color text-white font-medium text-xs p-3 w-3/4 rounded-md lg:w-fit lg:p-2 lg:-order-1">Get started</button>
+                        <button className="bg-btn-two-color mt-4 text-white font-medium text-xs p-3 w-30 rounded-md lg:w-fit lg:p-3 lg:-order-1 lg:text-sm">Get started</button>
                     </div>
                 
                 </div>
                 
             </section>
 
-            <section className="flex flex-col items-center bg-btn-two-color py-4 rounded-md mt-16 sm:p-8 lg:flex-row lg:px-16 lg:justify-center lg:gap-12 lg:rounded-none xl:gap-24">
+            <section className="flex flex-col items-center bg-btn-two-color py-4 rounded-md mt-8 sm:p-8 lg:flex-row lg:px-16 lg:justify-center lg:gap-12 lg:rounded-none xl:gap-24">
                 <Image 
                     src={"/images/founder.svg"}
                     width={276}
@@ -45,7 +93,7 @@ export default function Main () {
                         <p className="text-xs px-8 text-center text-text-color-two lg:text-start lg:px-0 lg:text-lg lg:w-[470px]">At Swift Pen, we simplify the freelancing process, ensuring you get reliable, high-quality services in ghostwriting, book editing, cover design, and more. With our dedicated administrator, Mr Raphael, we match your project with the best freelancer from our talented pool, guaranteeing timely delivery, exceptional quality, and budget-friendly solutions. Trust Swift Pen to bring your project to life.</p>
                     </div>
                     <Link href="/about">
-                        <button className="text-xs text-text-color-three border-b border-text-color-three pb-2 mt-8 lg:self-end lg:text-lg">Read more</button> 
+                        <button className="text-xs text-text-color-three border-b hover:text-amber-400 duration-150 hover:border-b hover:border-amber-400 border-text-color-three pb-2 mt-8 lg:self-end lg:text-lg">Read more</button> 
                     </Link>
                     
                 </div>

@@ -1,7 +1,9 @@
 'use client'
-import {useState, useEffect} from 'react';
+import {useState, useEffect, useRef} from 'react';
 import Link from "next/link";
 import Image from "next/image";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
 import { montsy } from "@/fonts/fonts";
 import { FaTimes } from 'react-icons/fa';
 import { usePathname } from 'next/navigation';
@@ -12,6 +14,7 @@ export default function Navbar () {
   const handleToggleNav = () => {
     setIsNavOpen(!isNavOpen);
   };
+  const container = useRef(null);
   // Function to determine if a link is active
   const isActiveLink = (href: string) => pathname === href;
   
@@ -34,15 +37,34 @@ export default function Navbar () {
       html.style.overflow = 'visible';
     };
   }, [isNavOpen])
+
+  let tl = gsap.timeline();
+  useGSAP (() => {
+      tl.fromTo('.logo', {x: -50, scale: 0, opacity: 0}, {
+          x: 0,
+          scale: 1,
+          opacity: 1,
+          duration: 1,
+          ease: "elastic.out",
+          yoyo: true
+      });
+      tl.fromTo('.nav-title', {y: 10, opacity: 0}, {
+        y: 0,
+        opacity: 1,
+        duration: 0.5,
+        ease: "power1.out",
+        stagger: 0.25,
+    });
+  }, { scope: container })
    
 
 
   return (
-    <nav className={`${montsy.className} lg:flex justify-between lg:self-center items-center`} >
+    <nav className={`${montsy.className} lg:flex justify-between lg:self-center items-center`} ref={container} >
       <div className="flex justify-between items-center">
         <div className="flex items-center">
             <Image 
-            className=""
+            className="logo"
             src={"/images/logo.svg"}
             alt="Swiftpen-logo"
             width={90}
@@ -69,19 +91,19 @@ export default function Navbar () {
         
         <div className="flex flex-col text-center leading-[60px] my-12 text-xl lg:flex-row lg:text-sm lg:text-h2-color lg:gap-12 xl:">
           <div className='flex flex-col lg:flex-row justify-between lg:space-x-24 items-center flex-grow xl:space-x-32'>
-              <Link href="/" className={`${isActiveLink('/') ? 'text-[#786F21] border-b border-[#786F21]' : ''} hover:text-[#786F21] transition duration-150 hover:ease-in`}>
+              <Link href="/" className={`${isActiveLink('/') ? 'text-[#786F21] border-b border-[#786F21]' : ''} hover:text-[#786F21] transition duration-150 hover:ease-in nav-title`}>
                 HOME
               </Link>
-              <Link href="/about" className={`${isActiveLink('/about') ? 'text-[#786F21] border-b border-[#786F21]' : ''} hover:text-[#786F21] transition duration-150 hover:ease-in`}>
+              <Link href="/about" className={`${isActiveLink('/about') ? 'text-[#786F21] border-b border-[#786F21]' : ''} hover:text-[#786F21] transition duration-150 hover:ease-in nav-title`}>
                 ABOUT US
               </Link>
-              <Link href="/services" className={`${isActiveLink('/services') ? 'text-[#786F21] border-b border-[#786F21]' : ''} hover:text-[#786F21] transition duration-150 hover:ease-in`}>
+              <Link href="/services" className={`${isActiveLink('/services') ? 'text-[#786F21] border-b border-[#786F21]' : ''} hover:text-[#786F21] transition duration-150 hover:ease-in nav-title`}>
                 SERVICES
               </Link>
-              <Link href="/faqs" className={`${isActiveLink('/faqs') ? 'text-[#786F21] border-b border-[#786F21]' : ''} hover:text-[#786F21] transition duration-150 hover:ease-in`}>
+              <Link href="/faqs" className={`${isActiveLink('/faqs') ? 'text-[#786F21] border-b border-[#786F21]' : ''} hover:text-[#786F21] transition duration-150 hover:ease-in nav-title`}>
                 FAQS
               </Link>
-              <Link href="/contact" className={`${isActiveLink('/contact') ? 'text-[#786F21] border-b border-[#786F21]' : ''} hover:text-[#786F21] transition duration-150 hover:ease-in`}>
+              <Link href="/contact" className={`${isActiveLink('/contact') ? 'text-[#786F21] border-b border-[#786F21]' : ''} hover:text-[#786F21] transition duration-150 hover:ease-in nav-title`}>
                 CONTACT US
               </Link>
           </div>
