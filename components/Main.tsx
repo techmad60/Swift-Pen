@@ -13,7 +13,7 @@ gsap.registerPlugin(ScrollTrigger);
 export default function Main () {
     const mainContainer = useRef(null);
     useGSAP (() => {
-        let ol = gsap.timeline();
+        const ol = gsap.timeline();
         ol.fromTo('.description', {opacity: 0, scale: 2}, {
             scale: 1,
             opacity: 1,
