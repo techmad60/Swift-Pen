@@ -65,7 +65,7 @@ export default function Footer() {
                   height={20}
                   alt="Hero Image"
                 />
-                <a href="tel:+2349091179886" className="text-btn-one-color text-xs duration-300 hover:text-yellow-700">090 9117 9886</a>
+                <a href="tel:+2349091179886" className="text-btn-one-color text-xs duration-300 hover:text-yellow-700">(+234)9091179886</a>
               </div>
               <div className="flex items-center gap-4">
                 <Image 

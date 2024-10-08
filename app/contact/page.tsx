@@ -49,7 +49,7 @@ export default function ContactPage () {
                         height={20}
                         alt="Hero Image"
                         />
-                        <a href="tel:+2349091179886" className="text-btn-one-color text-xs">090 9117 9886</a>
+                        <a href="tel:+2349091179886" className="text-btn-one-color text-xs">(+234)9091179886</a>
                     </div>
                     <div className="flex items-center gap-4">
                         <Image 
@@ -70,7 +70,12 @@ export default function ContactPage () {
                         <FaLinkedin size={20} className="text-text-color-five" />
                     </a>
                     <a href="https://x.com/Swiftpen_e?t=rPuU0m7BEZCnDsdx1PkHJQ&s=09" target="_blank" rel="noopener noreferrer">
-                        <FaTwitter size={20} className="text-text-color-five" />
+                        <Image 
+                        src={"/images/x-dark.svg"}
+                        width={20}
+                        height={20}
+                        alt="Hero Image"
+                    />
                     </a>
                     <a href="https://www.instagram.com/swiftpen_e/?igsh=MWxzd2hwZWsxdTE3Ng%3D%3D" target="_blank" rel="noopener noreferrer">
                     <FaInstagram size={20} className="text-text-color-five" />
