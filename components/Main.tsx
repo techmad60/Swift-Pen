@@ -8,13 +8,12 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-
-let tl = gsap.timeline();
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Main () {
     const mainContainer = useRef(null);
     useGSAP (() => {
+        let tl = gsap.timeline();
         tl.fromTo('.description', {opacity: 0, scale: 2}, {
             scale: 1,
             opacity: 1,
