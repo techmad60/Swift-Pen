@@ -1,7 +1,7 @@
 import Header from "@/components/Header";
 import { montsy, merri } from "@/fonts/fonts";
 import Image from "next/image";
-import { FaFacebookF, FaLinkedin, FaYoutube, FaTwitter, FaInstagram } from 'react-icons/fa';
+import { FaFacebookF, FaLinkedin, FaTwitter, FaInstagram } from 'react-icons/fa';
 export default function ContactPage () {
     return (
         <>
