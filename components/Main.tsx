@@ -13,8 +13,8 @@ gsap.registerPlugin(ScrollTrigger);
 export default function Main () {
     const mainContainer = useRef(null);
     useGSAP (() => {
-        let tl = gsap.timeline();
-        tl.fromTo('.description', {opacity: 0, scale: 2}, {
+        let ol = gsap.timeline();
+        ol.fromTo('.description', {opacity: 0, scale: 2}, {
             scale: 1,
             opacity: 1,
             duration: 0.5,
@@ -22,19 +22,19 @@ export default function Main () {
             delay: 2
         });
         
-        tl.fromTo('.hero', {opacity: 0, x: 20}, {
+        ol.fromTo('.hero', {opacity: 0, x: 20}, {
             x:0,
             opacity: 1,
             duration: 1,
             ease: "expo.out",
         });
-        tl.fromTo('.action', {opacity: 0,}, {
+        ol.fromTo('.action', {opacity: 0,}, {
             opacity: 1,
             duration: 0.5,
             stagger: 0.2,
             ease: "bounce",
         });
-        tl.fromTo('.about', {x: -10, opacity: 0, scale:2}, {
+        ol.fromTo('.about', {x: -10, opacity: 0, scale:2}, {
             x: 0,
             scale: 1,
             opacity: 1,
@@ -42,7 +42,7 @@ export default function Main () {
             ease: "expo.inOut",
             
         });
-        tl.fromTo('.button', {opacity: 0, scale: 1.5}, {
+        ol.fromTo('.button', {opacity: 0, scale: 1.5}, {
             y: 0,
             scale: 1,
             opacity: 1,
