@@ -57,7 +57,7 @@ export default function Navbar () {
       opacity: 1,
       duration: 0.25,
       ease: "power1.out",
-      stagger: 0.25,
+      stagger: 0.1,
       //onComplete: () => triggerMainAnimation() 
   });
     }

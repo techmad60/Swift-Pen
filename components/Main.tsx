@@ -11,71 +11,9 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Main () {
-    const mainContainer = useRef(null);
-    useGSAP (() => {
-        const tl = gsap.timeline();
-        tl.fromTo('.description', {opacity: 0, scale: 2}, {
-            scale: 1,
-            opacity: 1,
-            duration: 0.5,
-            ease: "expo.out",
-            delay: 2
-        });
-        
-        tl.fromTo('.hero', {opacity: 0, x: 20}, {
-            x:0,
-            opacity: 1,
-            duration: 1,
-            ease: "expo.out",
-        });
-        tl.fromTo('.action', {opacity: 0,}, {
-            opacity: 1,
-            duration: 0.5,
-            stagger: 0.2,
-            ease: "bounce",
-        });
-        tl.fromTo('.about', {x: -10, opacity: 0,}, {
-            x: 0,
-            opacity: 1,
-            duration: 1,
-            ease: "expo.inOut",
-            
-        });
-        tl.fromTo('.button', {opacity: 0, scale: 1.5}, {
-            y: 0,
-            scale: 1,
-            opacity: 1,
-            duration: 1,
-            ease: "bounce"
-        });
-       
-       // Animation for the ".action" section
-        const founderTL = gsap.timeline({
-            scrollTrigger: {
-            trigger: ".about-container",
-            start: "20% center",
-            end: "60% center",
-            scrub: 1,
-            markers: true,
-            }
-        });
 
-        founderTL.fromTo('.founder', {opacity: 0, x: -20}, {
-            x: 0,
-            opacity: 1,
-            duration: 0.8,
-            ease: "expo.out",
-        });
-        founderTL.fromTo('.quote', {opacity: 0, x: 20,}, {
-            x: 0,
-            opacity: 1,
-            duration: 0.8,
-            ease: "expo.out",
-        });
-
-    }, { scope: mainContainer })
     return (
-        <main className="" ref={mainContainer}>
+        <main className="">
             <section className="flex flex-col items-center text-center justify-center py-8 sm:p-8 lg:flex-row-reverse lg:px-16 lg:gap-16 xl:gap-44">
                 <p className={`${montsy.className} text-xs text-h2-color lg:hidden description`}>We make things easy</p>
                 <div className="py-4" >
@@ -120,13 +58,13 @@ export default function Main () {
             </section>
             
 
-            <section className="flex flex-col justify-center items-center py-8 px-6 bg-dot-pattern lg:px-16">
+            <section className="flex flex-col justify-center items-center py-8 px-6 bg-dot-pattern lg:px-16 services-container">
                 <h2 className="text-h2-color tracking-[0.4em] text-xs pt-4">Our Services</h2>
                 <p className="text-text-color-five lg:text-2xl">Experience the Difference</p>
                 <div className="py-4 px-6 flex flex-col space-y-12 w-full lg:grid lg:grid-cols-3 lg:space-y-0 lg:mt-12 max-w-5xl space-x-4">
 
                     <Link href="/services#ghost-writing">
-                        <div className="flex flex-col items-center justify-center gap-4 mt-4 w-full bg-white p-3 self-center shadow-md lg:mt-0 h-[18rem] rounded-md duration-300 hover:bg-yellow-100">
+                        <div className="flex flex-col items-center justify-center gap-4 mt-4 w-full bg-white p-3 self-center shadow-md lg:mt-0 h-[18rem] rounded-md duration-300 hover:bg-yellow-100 service-1">
                             <div className="flex items-center w-full gap-4 justify-center mt-4">
                                 <Image 
                                 src={"/images/bullet.svg"}
@@ -143,8 +81,8 @@ export default function Main () {
                         </div>
                     </Link>
 
-                    <Link href="/services#book-cover">
-                        <div className="flex flex-col items-center justify-center gap-4 mt-4 w-full bg-white p-4 self-center shadow-md lg:mt-0 h-[18rem] rounded-md duration-300 hover:bg-yellow-100">
+                    <Link href="/services#book-cover" className="">
+                        <div className="flex flex-col items-center justify-center gap-4 mt-4 w-full bg-white p-4 self-center shadow-md lg:mt-0 h-[18rem] rounded-md duration-300 hover:bg-yellow-100 service-2">
                             <div className="flex items-center w-full gap-4 justify-center mt-4">
                                 <Image 
                                 src={"/images/bullet.svg"}
@@ -163,8 +101,8 @@ export default function Main () {
 
                     
                     
-                    <Link href="/services#book-editing">
-                        <div className="flex flex-col items-center justify-center gap-4 mt-4 w-full bg-white p-4 self-center shadow-md lg:mt-0 h-[18rem] rounded-md duration-300 hover:bg-yellow-100">
+                    <Link href="/services#book-editing" className="">
+                        <div className="flex flex-col items-center justify-center gap-4 mt-4 w-full bg-white p-4 self-center shadow-md lg:mt-0 h-[18rem] rounded-md duration-300 hover:bg-yellow-100 service-3">
                             <div className="flex items-center w-full gap-4 justify-center mt-4">
                                 <Image 
                                 src={"/images/bullet.svg"}
