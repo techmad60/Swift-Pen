@@ -15,40 +15,40 @@ gsap.registerPlugin(ScrollTrigger);
 export default function Main () {
     const mainContainer = useRef(null);
     useGSAP (() => {
-        tl.fromTo('.description', {y: -400,}, {
-            y: 0,
-            scale: 1,
-            rotate: 0,
-            opacity: 1,
-            duration: 1,
-            ease: "bounce",
-            stagger: 0.5,
-        });
-        
-        tl.fromTo('.button', {opacity: 0, scale: 2}, {
-            y: 0,
-            scale: 1,
-            opacity: 1,
-            duration: 1,
-            ease: "bounce",
-            stagger: 0.2,
-        });
-        tl.fromTo('.avatar', {y: 0}, {
-            y: 10,
+        tl.fromTo('.description', {opacity: 0, scale: 2}, {
             scale: 1,
             opacity: 1,
             duration: 0.5,
-            yoyo: true,
-            repeat: -1
+            ease: "expo.out",
+            delay: 2
+        });
+        
+        tl.fromTo('.hero', {opacity: 0, x: 20}, {
+            x:0,
+            opacity: 1,
+            duration: 1,
+            ease: "expo.out",
+        });
+        tl.fromTo('.action', {opacity: 0,}, {
+            opacity: 1,
+            duration: 0.5,
+            stagger: 0.2,
+            ease: "bounce",
+        });
+        tl.fromTo('.about', {x: -10, opacity: 0, scale:2}, {
+            x: 0,
+            scale: 1,
+            opacity: 1,
+            duration: 1,
+            ease: "expo.inOut",
+            
         });
         tl.fromTo('.button', {opacity: 0, scale: 1.5}, {
             y: 0,
             scale: 1,
             opacity: 1,
             duration: 1,
-            ease: "bounce",
-            stagger: 0.2,
-            repeat: -1,
+            ease: "bounce"
         });
 
     }, { scope: mainContainer })
@@ -58,7 +58,7 @@ export default function Main () {
                 <p className={`${montsy.className} text-xs text-h2-color lg:hidden description`}>We make things easy</p>
                 <div className="py-4" >
                     <Image 
-                    className="lg:w-[500px]"
+                    className="lg:w-[500px] hero"
                     src={"/images/hero.svg"}
                     width={295.6}
                     height={279}
@@ -67,12 +67,12 @@ export default function Main () {
                 </div>
                 <div className="flex flex-col items-center lg:items-start lg:text-start">
                     <p className={`${montsy.className} text-xs text-h2-color hidden lg:flex lg:text-2xl description`}>WE MAKE THINGS EASY</p>
-                    <h1 className={`${merri.className} text-sm text-h1-color lg:text-5xl`}> Quit the Hunt</h1>
+                    <h1 className={`${merri.className} text-sm text-h1-color lg:text-5xl`}><span className="action">Quit</span> <span className="action">the</span> <span className="action">Hunt</span></h1>
 
-                    <p className="text-h2-color text-xs px-16 py-3 lg:px-0 lg:w-[250px]">Searching for the perfect freelancer can be overwhelming. Let us simplify things</p>
+                    <p className="text-h2-color text-xs px-16 py-3 lg:px-0 lg:w-[250px] about">Searching for the perfect freelancer can be overwhelming. Let us simplify things</p>
                     <div className="flex flex-col items-center space-y-4 lg:flex-row lg:space-y-0 lg:gap-4 lg:items-start">
                         {/* <button className="bg-btn-one-color text-white font-medium text-xs p-3 w-3/4 rounded-md lg:w-fit lg:p-2 lg:text-btn-two-color lg:bg-white">Try a demo</button> */}
-                        <button className="bg-btn-two-color mt-4 text-white font-medium text-xs p-3 w-30 rounded-md lg:w-fit lg:p-3 lg:-order-1 lg:text-sm">Get started</button>
+                        <button className="bg-btn-two-color mt-4 text-white font-medium text-xs p-3 w-30 rounded-md lg:w-fit lg:p-3 lg:-order-1 lg:text-sm button">Get started</button>
                     </div>
                 
                 </div>

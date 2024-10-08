@@ -38,23 +38,30 @@ export default function Navbar () {
     };
   }, [isNavOpen])
 
-  let tl = gsap.timeline();
+  
   useGSAP (() => {
-      tl.fromTo('.logo', {x: -50, scale: 0, opacity: 0}, {
-          x: 0,
-          scale: 1,
-          opacity: 1,
-          duration: 1,
-          ease: "elastic.out",
-          yoyo: true
-      });
-      tl.fromTo('.nav-title', {y: 10, opacity: 0}, {
-        y: 0,
-        opacity: 1,
-        duration: 0.5,
-        ease: "power1.out",
-        stagger: 0.25,
+    let tl = gsap.timeline();
+    
+    tl.fromTo('.logo', {x: -50, scale: 0, opacity: 0}, {
+      x: 0,
+      scale: 1,
+      opacity: 1,
+      duration: 0.5,
+      ease: "elastic.out",
+      yoyo: true
     });
+
+    if(window.innerWidth >= 1024) {
+    tl.fromTo('.nav-title', {y: 10, opacity: 0}, {
+      y: 0,
+      opacity: 1,
+      duration: 0.25,
+      ease: "power1.out",
+      stagger: 0.25,
+      //onComplete: () => triggerMainAnimation() 
+  });
+    }
+     
   }, { scope: container })
    
 
