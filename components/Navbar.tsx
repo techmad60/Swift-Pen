@@ -40,8 +40,8 @@ export default function Navbar () {
 
   
   useGSAP (() => {
-    let tl = gsap.timeline();
-    
+    const tl = gsap.timeline();
+
     tl.fromTo('.logo', {x: -50, scale: 0, opacity: 0}, {
       x: 0,
       scale: 1,
