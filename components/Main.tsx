@@ -13,8 +13,8 @@ gsap.registerPlugin(ScrollTrigger);
 export default function Main () {
     const mainContainer = useRef(null);
     useGSAP (() => {
-        const ol = gsap.timeline();
-        ol.fromTo('.description', {opacity: 0, scale: 2}, {
+        const tl = gsap.timeline();
+        tl.fromTo('.description', {opacity: 0, scale: 2}, {
             scale: 1,
             opacity: 1,
             duration: 0.5,
@@ -22,32 +22,55 @@ export default function Main () {
             delay: 2
         });
         
-        ol.fromTo('.hero', {opacity: 0, x: 20}, {
+        tl.fromTo('.hero', {opacity: 0, x: 20}, {
             x:0,
             opacity: 1,
             duration: 1,
             ease: "expo.out",
         });
-        ol.fromTo('.action', {opacity: 0,}, {
+        tl.fromTo('.action', {opacity: 0,}, {
             opacity: 1,
             duration: 0.5,
             stagger: 0.2,
             ease: "bounce",
         });
-        ol.fromTo('.about', {x: -10, opacity: 0, scale:2}, {
+        tl.fromTo('.about', {x: -10, opacity: 0,}, {
             x: 0,
-            scale: 1,
             opacity: 1,
             duration: 1,
             ease: "expo.inOut",
             
         });
-        ol.fromTo('.button', {opacity: 0, scale: 1.5}, {
+        tl.fromTo('.button', {opacity: 0, scale: 1.5}, {
             y: 0,
             scale: 1,
             opacity: 1,
             duration: 1,
             ease: "bounce"
+        });
+       
+       // Animation for the ".action" section
+        const founderTL = gsap.timeline({
+            scrollTrigger: {
+            trigger: ".about-container",
+            start: "20% center",
+            end: "60% center",
+            scrub: 1,
+            markers: true,
+            }
+        });
+
+        founderTL.fromTo('.founder', {opacity: 0, x: -20}, {
+            x: 0,
+            opacity: 1,
+            duration: 0.8,
+            ease: "expo.out",
+        });
+        founderTL.fromTo('.quote', {opacity: 0, x: 20,}, {
+            x: 0,
+            opacity: 1,
+            duration: 0.8,
+            ease: "expo.out",
         });
 
     }, { scope: mainContainer })
@@ -73,21 +96,19 @@ export default function Main () {
                         {/* <button className="bg-btn-one-color text-white font-medium text-xs p-3 w-3/4 rounded-md lg:w-fit lg:p-2 lg:text-btn-two-color lg:bg-white">Try a demo</button> */}
                         <button className="bg-btn-two-color mt-4 text-white font-medium text-xs p-3 w-30 rounded-md lg:w-fit lg:p-3 lg:-order-1 lg:text-sm button">Get started</button>
                     </div>
-                
-                </div>
-                
+                </div> 
             </section>
 
-            <section className="flex flex-col items-center bg-btn-two-color py-4 rounded-md mt-8 sm:p-8 lg:flex-row lg:px-16 lg:justify-center lg:gap-12 lg:rounded-none xl:gap-24">
+            <section className="flex flex-col items-center bg-btn-two-color py-4 rounded-md mt-8 sm:p-8 lg:flex-row lg:px-16 lg:justify-center lg:gap-12 lg:rounded-none xl:gap-24 about-container">
                 <Image 
                     src={"/images/founder.svg"}
                     width={276}
                     height={348.28}
                     alt="Hero Image"
-                    className="pt-6 lg:pt-0 lg:w-[24rem] xl:w-[29rem]"
+                    className="pt-6 lg:pt-0 lg:w-[24rem] xl:w-[29rem] founder"
                 />
-                <div className="flex flex-col items-center lg:items-start lg:text-start">
-                    <div className="text-text-color-two ">
+                <div className="flex flex-col items-center lg:items-start lg:text-start quote">
+                    <div className="text-text-color-two">
                         <p className={`${changa.className} text-4xl pl-12 leading-none lg:text-8xl lg:pl-0`}>&quot;</p>
                         <p className="text-xs px-8 text-center text-text-color-two lg:text-start lg:px-0 lg:text-lg lg:w-[470px]">At Swift Pen, we simplify the freelancing process, ensuring you get reliable, high-quality services in ghostwriting, book editing, cover design, and more. With our dedicated administrator, Mr Raphael, we match your project with the best freelancer from our talented pool, guaranteeing timely delivery, exceptional quality, and budget-friendly solutions. Trust Swift Pen to bring your project to life.</p>
                     </div>
