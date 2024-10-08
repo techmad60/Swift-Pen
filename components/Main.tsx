@@ -1,14 +1,8 @@
-"use client";
-import { useRef } from "react";
+
 import Image from "next/image";
 import { montsy, merri, changa } from "@/fonts/fonts";
 import { FaArrowRight } from "react-icons/fa";
 import Link from "next/link";
-import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-
-gsap.registerPlugin(ScrollTrigger);
 
 export default function Main () {
 
