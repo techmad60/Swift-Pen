@@ -80,26 +80,44 @@ export default function Footer() {
           </section>
           <section className="flex flex-col">
             <h2 className="text-btn-one-color text-sm font-medium pt-4 lg:text-center">Follow Us</h2>
-              <div className="flex flex-col space-y-6 ">
-                <div className="flex items-center gap-4 mt-4">
+              <nav className="flex flex-col space-y-6">
+                <ul className="flex items-center gap-2 mt-4">
                   <Image 
                     src={"/images/instagram.svg"}
                     width={24}
                     height={24}
                     alt="Hero Image"
                   />
-                  <p className="text-btn-one-color text-xs">Instagram</p>
-                </div>
-                <div className="flex items-center gap-4">
+                  <li className="text-btn-one-color text-xs duration-300 hover:text-yellow-700"><a href="https://www.instagram.com/swiftpen_e/?igsh=MWxzd2hwZWsxdTE3Ng%3D%3D">Instagram</a></li>
+                </ul>
+                <ul className="flex items-center gap-4">
                   <Image 
                     src={"/images/facebook.svg"}
                     width={14}
                     height={14}
                     alt="Hero Image"
                   />
-                  <p className="text-btn-one-color text-xs">Facebook</p>
-                </div>
-            </div>
+                  <li className="text-btn-one-color text-xs duration-300 hover:text-yellow-700"><a href="https://www.facebook.com/swiftpenenterprise?mibextid=ZbWKwL">Facebook</a></li>
+                </ul>
+                <ul className="flex items-center gap-4">
+                  <Image 
+                    src={"/images/x.svg"}
+                    width={20}
+                    height={20}
+                    alt="Hero Image"
+                  />
+                  <li className="text-btn-one-color text-xs duration-300 hover:text-yellow-700"><a href="https://x.com/Swiftpen_e?t=rPuU0m7BEZCnDsdx1PkHJQ&s=09">X</a></li>
+                </ul>
+                <ul className="flex items-center gap-4">
+                  <Image 
+                    src={"/images/linkedin.svg"}
+                    width={20}
+                    height={20}
+                    alt="Hero Image"
+                  />
+                  <li className="text-btn-one-color text-xs duration-300 hover:text-yellow-700"><a href="https://www.linkedin.com/company/swift-pen-enterprise/">Linkedin</a></li>
+                </ul>
+            </nav>
           </section>
           {/* <section className="flex flex-col">
             <h2 className="text-btn-one-color  text-sm font-medium pt-4">Get our App on</h2>
