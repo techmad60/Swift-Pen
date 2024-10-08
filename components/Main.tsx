@@ -1,8 +1,8 @@
-
 import Image from "next/image";
 import { montsy, merri, changa } from "@/fonts/fonts";
 import { FaArrowRight } from "react-icons/fa";
 import Link from "next/link";
+import Testimonials from "./Testimonials";
 
 export default function Main () {
 
@@ -143,92 +143,7 @@ export default function Main () {
                     </div>
                 </div>
             </section>
-            <section className="bg-btn-two-color">
-                <div className="flex flex-col items-center bg-curved-pattern py-12">
-                    <h2 className="text-text-color-two tracking-[0.4em] text-xs ">TESTIMONIALS</h2>
-                    <p className="text-white lg:text-2xl">What they say about us</p>
-                    <div className="text-h2-color flex flex-col items-center w-full lg:flex-row space-x-4 lg:justify-center">
-                        <div className="bg-white items-center flex flex-col w-[259px] h-[326px] rounded-md mt-12 relative px-8  ">
-                            <div className="rounded-full p-2 flex justify-center items-center bg-green-950  w-fit absolute -top-7">
-                                <Image 
-                                src={"/images/happpy.png"}
-                                width={50}
-                                height={50}
-                                className="rounded-md"
-                                alt="Craft three"
-                                />
-                            </div>
-                            <hr className="mt-16 w-8 border-gray-300"/>
-                            <div className="flex items-center gap-2 my-4"> 
-                                <Image 
-                                src={"/images/stars.svg"}
-                                width={81}
-                                height={16}
-                                className="rounded-md"
-                                alt="Craft three"
-                                />
-                                <p className="">5.0</p>
-                            </div>
-                            <p className="text-sm text-center">Very easy with communication. Competent in providing services. Committed to achieving excellent results. </p>
-
-                            <hr className="mt-8 w-full border-gray-300"/>
-                            <p className="border-l border-green-800 text-xs mt-6 self-start pl-2">Satisfied Client</p>
-                            </div>
-                            <div className="bg-white items-center flex flex-col w-[259px] h-[326px] rounded-md mt-12 relative px-8">
-                            <div className="rounded-full p-2 flex justify-center items-center bg-green-950 w-fit absolute -top-7">
-                                <Image 
-                                src={"/images/happpy.png"}
-                                width={50}
-                                height={50}
-                                className="rounded-md"
-                                alt="Craft three"
-                                />
-                            </div>
-                            <hr className="mt-16 w-8 border-gray-300"/>
-                            <div className="flex items-center gap-2 my-4"> 
-                                <Image 
-                                src={"/images/stars.svg"}
-                                width={81}
-                                height={16}
-                                className="rounded-md"
-                                alt="Craft three"
-                                />
-                                <p className="">5.0</p>
-                            </div>
-                            <p className="text-sm text-center">Very easy with communication. Competent in providing services. Committed to achieving excellent results. </p>
-
-                            <hr className="mt-8 w-full border-gray-300"/>
-                            <p className="border-l border-green-800 text-xs mt-6 self-start pl-2">Satisfied Client</p>
-                            </div>
-                            <div className="bg-white items-center flex flex-col w-[259px] h-[326px] rounded-md mt-12 relative px-8">
-                            <div className="rounded-full p-2 flex justify-center items-center bg-green-950 w-fit absolute -top-7">
-                                <Image 
-                                src={"/images/happpy.png"}
-                                width={50}
-                                height={50}
-                                className="rounded-md"
-                                alt="Craft three"
-                                />
-                            </div>
-                            <hr className="mt-16 w-8 border-gray-300"/>
-                            <div className="flex items-center gap-2 my-4"> 
-                                <Image 
-                                src={"/images/stars.svg"}
-                                width={81}
-                                height={16}
-                                className="rounded-md"
-                                alt="Craft three"
-                                />
-                                <p className="">5.0</p>
-                            </div>
-                            <p className="text-sm text-start">Very easy with communication. Competent in providing services. Committed to achieving excellent results. </p>
-
-                            <hr className="mt-8 w-full border-gray-300"/>
-                            <p className="border-l border-green-800 text-xs mt-6 self-start pl-2">Satisfied Client</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            <Testimonials />
         </main>
     )
 }

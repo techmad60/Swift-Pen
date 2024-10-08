@@ -106,7 +106,7 @@ export default function Footer() {
                     height={20}
                     alt="Hero Image"
                   />
-                  <li className="text-btn-one-color text-xs duration-300 hover:text-yellow-700"><a href="https://x.com/Swiftpen_e?t=rPuU0m7BEZCnDsdx1PkHJQ&s=09">X</a></li>
+                  <li className="text-btn-one-color text-xs duration-300 hover:text-yellow-700"><a href="https://x.com/Swiftpen_e?t=rPuU0m7BEZCnDsdx1PkHJQ&s=09">X (f.k.a Twitter)</a></li>
                 </ul>
                 <ul className="flex items-center gap-4">
                   <Image 
