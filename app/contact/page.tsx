@@ -40,7 +40,7 @@ export default function ContactPage () {
                         height={24}
                         alt="Hero Image"
                         />
-                        <p className="text-btn-one-color text-xs">2972 Westheimer Rd. Santa Ana, Illinois 85486 </p>
+                        <p className="text-btn-one-color text-xs">828 LANE ALLEN RD STE 219, LEXINGTON, KY 40504 </p>
                     </div>
                     <div className="flex items-center gap-4">
                         <Image 
@@ -49,7 +49,7 @@ export default function ContactPage () {
                         height={20}
                         alt="Hero Image"
                         />
-                        <p className="text-btn-one-color text-xs">(684) 555-0102</p>
+                        <a href="tel:+2349091179886" className="text-btn-one-color text-xs">090 9117 9886</a>
                     </div>
                     <div className="flex items-center gap-4">
                         <Image 
@@ -58,24 +58,21 @@ export default function ContactPage () {
                         height={20}
                         alt="Hero Image"
                         />
-                        <p className="text-btn-one-color text-xs">alma.lawson@example.com</p>
+                        <a href="mailto:info@swiftpenenterprise.com" className="text-btn-one-color text-xs">info@swiftpenenterprise.com</a>
                     </div>
                 </div>
             
                 <div className="social-icons flex justify-center items-center space-x-4 m-12 lg:mt-0">
-                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.facebook.com/swiftpenenterprise?mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer">
                         <FaFacebookF size={20} className="text-text-color-five" />
                     </a>
-                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.linkedin.com/company/swift-pen-enterprise/" target="_blank" rel="noopener noreferrer">
                         <FaLinkedin size={20} className="text-text-color-five" />
                     </a>
-                    <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
-                        <FaYoutube size={20} className="text-text-color-five" />
-                    </a>
-                    <a href="https://x.com" target="_blank" rel="noopener noreferrer">
+                    <a href="https://x.com/Swiftpen_e?t=rPuU0m7BEZCnDsdx1PkHJQ&s=09" target="_blank" rel="noopener noreferrer">
                         <FaTwitter size={20} className="text-text-color-five" />
                     </a>
-                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.instagram.com/swiftpen_e/?igsh=MWxzd2hwZWsxdTE3Ng%3D%3D" target="_blank" rel="noopener noreferrer">
                     <FaInstagram size={20} className="text-text-color-five" />
                     </a>
                 </div>

@@ -56,7 +56,7 @@ export default function Footer() {
                   height={24}
                   alt="Hero Image"
                 />
-                <p className="text-btn-one-color text-xs">2972 Westheimer Rd. Santa Ana, Illinois 85486 </p>
+                <p className="text-btn-one-color text-xs">828 LANE ALLEN RD STE 219, LEXINGTON, KY 40504</p>
               </div>
               <div className="flex items-center gap-4">
                 <Image 
@@ -65,7 +65,7 @@ export default function Footer() {
                   height={20}
                   alt="Hero Image"
                 />
-                <p className="text-btn-one-color text-xs">(684) 555-0102</p>
+                <a href="tel:+2349091179886" className="text-btn-one-color text-xs duration-300 hover:text-yellow-700">090 9117 9886</a>
               </div>
               <div className="flex items-center gap-4">
                 <Image 
@@ -74,23 +74,14 @@ export default function Footer() {
                   height={20}
                   alt="Hero Image"
                 />
-                <p className="text-btn-one-color text-xs">alma.lawson@example.com</p>
+                <a href="mailto:info@swiftpenenterprise.com" className="text-btn-one-color text-xs duration-300 hover:text-yellow-700">info@swiftpenenterprise.com</a>
               </div>
             </div>
           </section>
           <section className="flex flex-col">
             <h2 className="text-btn-one-color text-sm font-medium pt-4 lg:text-center">Follow Us</h2>
               <nav className="flex flex-col space-y-6">
-                <ul className="flex items-center gap-2 mt-4">
-                  <Image 
-                    src={"/images/instagram.svg"}
-                    width={24}
-                    height={24}
-                    alt="Hero Image"
-                  />
-                  <li className="text-btn-one-color text-xs duration-300 hover:text-yellow-700"><a href="https://www.instagram.com/swiftpen_e/?igsh=MWxzd2hwZWsxdTE3Ng%3D%3D">Instagram</a></li>
-                </ul>
-                <ul className="flex items-center gap-4">
+                <ul className="flex items-center gap-4 mt-4">
                   <Image 
                     src={"/images/facebook.svg"}
                     width={14}
@@ -98,6 +89,15 @@ export default function Footer() {
                     alt="Hero Image"
                   />
                   <li className="text-btn-one-color text-xs duration-300 hover:text-yellow-700"><a href="https://www.facebook.com/swiftpenenterprise?mibextid=ZbWKwL">Facebook</a></li>
+                </ul>
+                <ul className="flex items-center gap-2">
+                  <Image 
+                    src={"/images/instagram.svg"}
+                    width={24}
+                    height={24}
+                    alt="Hero Image"
+                  />
+                  <li className="text-btn-one-color text-xs duration-300 hover:text-yellow-700"><a href="https://www.instagram.com/swiftpen_e/?igsh=MWxzd2hwZWsxdTE3Ng%3D%3D">Instagram</a></li>
                 </ul>
                 <ul className="flex items-center gap-4">
                   <Image 
