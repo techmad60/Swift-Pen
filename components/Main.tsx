@@ -26,7 +26,7 @@ export default function Main () {
                     <p className="text-h2-color text-xs px-16 py-3 lg:px-0 lg:w-[250px] about">Searching for the perfect freelancer can be overwhelming. Let us simplify things</p>
                     <div className="flex flex-col items-center space-y-4 lg:flex-row lg:space-y-0 lg:gap-4 lg:items-start">
                         {/* <button className="bg-btn-one-color text-white font-medium text-xs p-3 w-3/4 rounded-md lg:w-fit lg:p-2 lg:text-btn-two-color lg:bg-white">Try a demo</button> */}
-                        <button className="bg-btn-two-color mt-4 text-white font-medium text-xs p-3 w-30 rounded-md lg:w-fit lg:p-3 lg:-order-1 lg:text-sm button">Get started</button>
+                        <button className="bg-btn-two-color mt-4 text-white font-medium text-xs p-3 w-30 rounded-md lg:w-fit lg:p-3 lg:-order-1 lg:text-sm button duration-300 hover:bg-lime-500">Get started</button>
                     </div>
                 </div> 
             </section>
@@ -55,10 +55,10 @@ export default function Main () {
             <section className="flex flex-col justify-center items-center py-8 px-6 bg-dot-pattern lg:px-16 services-container">
                 <h2 className="text-h2-color tracking-[0.4em] text-xs pt-4">Our Services</h2>
                 <p className="text-text-color-five lg:text-2xl">Experience the Difference</p>
-                <div className="py-4 px-6 flex flex-col space-y-12 w-full lg:grid lg:grid-cols-3 lg:space-y-0 lg:mt-12 max-w-5xl space-x-4">
+                <div className="py-4 px-6 grid grid-rows-3 grid-cols-1 space-y-12 w-full lg:grid lg:grid-cols-3 lg:grid-rows-1 lg:space-x-4 lg:space-y-0 lg:mt-12 max-w-5xl">
 
                     <Link href="/services#ghost-writing">
-                        <div className="flex flex-col items-center justify-center gap-4 mt-4 w-full bg-white p-3 self-center shadow-md lg:mt-0 h-[18rem] rounded-md duration-300 hover:bg-yellow-100 service-1">
+                        <div className="flex flex-col items-center justify-center gap-4 mt-4 w-full lg:flex-1 bg-white p-3 self-center shadow-md lg:mt-0 h-[18rem] rounded-md duration-300 hover:bg-yellow-100 service-1">
                             <div className="flex items-center w-full gap-4 justify-center mt-4">
                                 <Image 
                                 src={"/images/bullet.svg"}
@@ -66,17 +66,17 @@ export default function Main () {
                                 height={12}
                                 alt="Hero Image"
                                 />
-                                <p className="flex items-center gap-4 text-text-color-four">Ghost Writing </p>
+                                <p className="flex items-center gap-4 text-text-color-four">Ghost Writing</p>
                             </div>
-                            <p className="text-center px-4 text-text-color-four mt-2">Tell your story with our expert ghostwriting services. We write compelling narratives, articles and books that reflect your own unique perspective and vision </p>
+                            <p className="text-center px-4 text-text-color-four mt-2">Tell your story with our expert ghostwriting services. We write compelling narratives, articles, and books that reflect your own unique perspective and vision.</p>
                             <div className="flex self-end h-full text-[#15B7B2] items-end">
                                 <FaArrowRight />
                             </div>
                         </div>
                     </Link>
 
-                    <Link href="/services#book-cover" className="">
-                        <div className="flex flex-col items-center justify-center gap-4 mt-4 w-full bg-white p-4 self-center shadow-md lg:mt-0 h-[18rem] rounded-md duration-300 hover:bg-yellow-100 service-2">
+                    <Link href="/services#book-cover">
+                        <div className="flex flex-col items-center justify-center gap-4 mt-4 w-full lg:flex-1 bg-white p-3 self-center shadow-md lg:mt-0 h-[18rem] rounded-md duration-300 hover:bg-yellow-100 service-2">
                             <div className="flex items-center w-full gap-4 justify-center mt-4">
                                 <Image 
                                 src={"/images/bullet.svg"}
@@ -84,19 +84,17 @@ export default function Main () {
                                 height={12}
                                 alt="Hero Image"
                                 />
-                                <p className="flex items-center gap-4 text-text-color-four">Book Cover Design </p>
+                                <p className="flex items-center gap-4 text-text-color-four">Book Cover Design</p>
                             </div>
-                            <p className="text-center px-4 text-text-color-four mt-2">We craft stunning book covers that grab attention and perfectly display the essence of your story. Get custom design! </p>
+                            <p className="text-center px-4 text-text-color-four mt-2">We craft stunning book covers that grab attention and perfectly display the essence of your story. Get custom design!</p>
                             <div className="flex self-end h-full text-[#15B7B2] items-end">
                                 <FaArrowRight />
                             </div>
                         </div>
                     </Link>
 
-                    
-                    
-                    <Link href="/services#book-editing" className="">
-                        <div className="flex flex-col items-center justify-center gap-4 mt-4 w-full bg-white p-4 self-center shadow-md lg:mt-0 h-[18rem] rounded-md duration-300 hover:bg-yellow-100 service-3">
+                    <Link href="/services#book-editing">
+                        <div className="flex flex-col items-center justify-center gap-4 mt-4 w-full lg:flex-1 bg-white p-3 self-center shadow-md lg:mt-0 h-[18rem] rounded-md duration-300 hover:bg-yellow-100 service-3">
                             <div className="flex items-center w-full gap-4 justify-center mt-4">
                                 <Image 
                                 src={"/images/bullet.svg"}
@@ -104,16 +102,16 @@ export default function Main () {
                                 height={12}
                                 alt="Hero Image"
                                 />
-                                <p className="flex items-center gap-4 text-text-color-four">Book Editing </p>
+                                <p className="flex items-center gap-4 text-text-color-four">Book Editing</p>
                             </div>
-                            <p className="text-center px-4 text-text-color-four mt-2">Fine-tune your manuscript with our expert editing Services </p>
+                            <p className="text-center px-4 text-text-color-four mt-2">Fine-tune your manuscript with our expert editing services.</p>
                             <div className="flex self-end h-full text-[#15B7B2] items-end">
                                 <FaArrowRight />
                             </div>
                         </div>
                     </Link>
-                    
                 </div>
+
 
                 <div className="flex flex-col justify-center items-center mt-20 w-full">
                     <h2 className="text-h2-color tracking-[0.4em] text-xs pt-4">Our Crafts</h2>
