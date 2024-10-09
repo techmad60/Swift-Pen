@@ -5,7 +5,7 @@ export default function Testimonials() {
                 <div className="flex flex-col items-center bg-curved-pattern py-12">
                     <h2 className="text-text-color-two tracking-[0.4em] text-xs ">TESTIMONIALS</h2>
                     <p className="text-white lg:text-2xl">What they say about us</p>
-                    <div className="text-h2-color flex flex-col items-center w-full lg:flex-row space-x-4 lg:justify-center overflow-scroll max-w-[17rem] lg:max-w-7xl">
+                    <div className="text-h2-color flex flex-col items-center w-full lg:flex-row space-x-4 lg:justify-center lg:max-w-7xl">
                         <div className="bg-white items-center flex flex-col w-[259px] h-[326px] rounded-md mt-12 relative px-8 flex-shrink-0 ">
                             <div className="rounded-full p-2 flex justify-center items-center bg-green-950  w-fit absolute -top-7">
                                 <Image 
@@ -54,7 +54,8 @@ export default function Testimonials() {
                                 />
                                 <p className="">5.0</p>
                             </div>
-                            <p className="text-sm text-center">Very easy with communication. Competent in providing services. Committed to achieving excellent results. </p>
+                            <p className="text-sm text-center">He listened to all my concerns and gave me great writing! Timely and very professional.
+</p>
 
                             <hr className="mt-8 w-full border-gray-300"/>
                             <p className="border-l border-green-800 text-xs mt-6 self-start pl-2">Satisfied Client</p>
@@ -80,7 +81,7 @@ export default function Testimonials() {
                                 />
                                 <p className="">5.0</p>
                             </div>
-                            <p className="text-sm text-center">Very easy with communication. Competent in providing services. Committed to achieving excellent results. </p>
+                            <p className="text-sm text-center">"Fabulous again! Raphael has kept a steady track of completing work efficiently and in a timely manner. Love working with him!" </p>
 
                             <hr className="mt-8 w-full border-gray-300"/>
                             <p className="border-l border-green-800 text-xs mt-6 self-start pl-2">Satisfied Client</p>

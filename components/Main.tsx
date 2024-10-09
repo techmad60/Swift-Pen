@@ -3,6 +3,7 @@ import { montsy, merri, changa } from "@/fonts/fonts";
 import { FaArrowRight } from "react-icons/fa";
 import Link from "next/link";
 import Testimonials from "./Testimonials";
+import Crafts from "./Crafts";
 
 export default function Main () {
 
@@ -26,7 +27,7 @@ export default function Main () {
                     <p className="text-h2-color text-xs px-16 py-3 lg:px-0 lg:w-[250px] about">Searching for the perfect freelancer can be overwhelming. Let us simplify things</p>
                     <div className="flex flex-col items-center space-y-4 lg:flex-row lg:space-y-0 lg:gap-4 lg:items-start">
                         {/* <button className="bg-btn-one-color text-white font-medium text-xs p-3 w-3/4 rounded-md lg:w-fit lg:p-2 lg:text-btn-two-color lg:bg-white">Try a demo</button> */}
-                        <button className="bg-btn-two-color mt-4 text-white font-medium text-xs p-3 w-30 rounded-md lg:w-fit lg:p-3 lg:-order-1 lg:text-sm button duration-300 hover:bg-lime-500">Get started</button>
+                        <button className="bg-btn-two-color mt-4 text-white font-medium text-xs p-3 w-30 rounded-md lg:w-fit lg:p-3 lg:-order-1 lg:text-sm button duration-300 hover:bg-lime-500"><a href="mailto:engage@swiftpenenterprise.com?subject=Swift%20Pen%20Project&body=Project%20Name%3A%20(Please%20Prefill%20your%20Project%20Name)%0A%0ABrief%20Description%3A%20(Provide%20a%20compelling%20description%20that%20highlights%20your%20vision%20and%20key%20goals%20for%20this%20project)%0A%0AEstimated%20Project%20Timeline%3A%0A%0AStart%20Date%3A%0A%0AEstimated%20Budget%3A%0A%0A(Any%20other%20information)%0A%0ABest%20Regards%2C%0A(Your%20name)"></a>Get started</button>
                     </div>
                 </div> 
             </section>
@@ -111,37 +112,7 @@ export default function Main () {
                         </div>
                     </Link>
                 </div>
-
-
-                <div className="flex flex-col justify-center items-center mt-20 w-full">
-                    <h2 className="text-h2-color tracking-[0.4em] text-xs pt-4">Our Crafts</h2>
-                    <p className="text-text-color-five lg:text-2xl">View some of our crafts</p>
-                    <div className="flex space-x-4 overflow-x-scroll my-8 scroll-smooth  w-full lg:mt-12 lg:justify-center">
-                        <Image 
-                        src={"/images/sample1.svg"}
-                        width={259}
-                        height={326}
-                        className="rounded-md  "
-                        alt="Craft one"
-                        
-                        />
-                        
-                        <Image 
-                        src={"/images/sample2.svg"}
-                        width={259}
-                        height={326}
-                        className="rounded-md"
-                        alt="Craft two"
-                        />
-                        <Image 
-                        src={"/images/sample3.svg"}
-                        width={259}
-                        height={326}
-                        className="rounded-md"
-                        alt="Craft three"
-                        />
-                    </div>
-                </div>
+                <Crafts />
             </section>
             <Testimonials />
         </main>
