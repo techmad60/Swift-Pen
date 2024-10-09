@@ -3,7 +3,7 @@ import Image from "next/image"
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 import 'swiper/css';
-import styles from '../styles/Testimonials.module.css';
+// import styles from '../styles/Testimonials.module.css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
