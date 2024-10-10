@@ -27,7 +27,7 @@ export default function Testimonials() {
                                 />
                                 <p className="">5.0</p>
                             </div>
-                            <p className="text-sm text-center">Very easy with communication. Competent in providing services. Committed to achieving excellent results. </p>
+                            <p className="text-sm text-center">&quot;Very easy with communication. Competent in providing services. Committed to achieving excellent results.&quot;</p>
 
                             <hr className="mt-8 w-full border-gray-300"/>
                             <p className="border-l border-green-800 text-xs mt-6 self-start pl-2">Satisfied Client</p>
@@ -54,7 +54,7 @@ export default function Testimonials() {
                                 />
                                 <p className="">5.0</p>
                             </div>
-                            <p className="text-sm text-center">He listened to all my concerns and gave me great writing! Timely and very professional.
+                            <p className="text-sm text-center">&quot;He listened to all my concerns and gave me great writing! Timely and very professional&quot;.
 </p>
 
                             <hr className="mt-8 w-full border-gray-300"/>
@@ -81,7 +81,7 @@ export default function Testimonials() {
                                 />
                                 <p className="">5.0</p>
                             </div>
-                            <p className="text-sm text-center">"Fabulous again! Raphael has kept a steady track of completing work efficiently and in a timely manner. Love working with him!" </p>
+                            <p className="text-sm text-center">&quot;Fabulous again! Raphael has kept a steady track of completing work efficiently and in a timely manner. Love working with him!&quot;</p>
 
                             <hr className="mt-8 w-full border-gray-300"/>
                             <p className="border-l border-green-800 text-xs mt-6 self-start pl-2">Satisfied Client</p>
