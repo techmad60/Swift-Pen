@@ -69,13 +69,12 @@ export default function ContactPage () {
                     <a href="https://www.linkedin.com/company/swift-pen-enterprise/" target="_blank" rel="noopener noreferrer">
                         <FaLinkedin size={20} className="text-text-color-five duration-300  " />
                     </a>
-                    <a href="https://x.com/Swiftpen_e?t=rPuU0m7BEZCnDsdx1PkHJQ&s=09" target="_blank" rel="noopener noreferrer" className="">
+                    <a href="https://x.com/Swiftpen_e?t=rPuU0m7BEZCnDsdx1PkHJQ&s=09" target="_blank" rel="noopener noreferrer">
                         <Image 
                         src={"/images/x-dark.svg"}
                         width={20}
                         height={20}
                         alt="Hero Image"
-                        className=""
                     />
                     </a>
                     <a href="https://www.instagram.com/swiftpen_e/?igsh=MWxzd2hwZWsxdTE3Ng%3D%3D" target="_blank" rel="noopener noreferrer">
