@@ -26,7 +26,7 @@ export default function ContactPage () {
                         <input type="email" placeholder="Email" className="outline-none border-b p-2 placeholder:text-xs rounded-md w-full"/>
                         <label htmlFor="Message"></label>
                         <input id="message" name="message"  placeholder="Type your message" className="outline-none border-b p-2 placeholder:text-xs rounded-md w-full"></input>
-                        <button type="submit" className="text-white text-xs m-5 rounded-sm items-start lg:self-end text-center bg-btn-two-color w-[7rem] py-4">Send message</button>
+                        <button type="submit" className="text-white text-xs m-5 rounded-sm items-start lg:self-end text-center bg-btn-two-color w-[7rem] py-4 duration-300 hover:bg-lime-500">Send message</button>
                     </form>
                     
                 </div>
@@ -42,7 +42,7 @@ export default function ContactPage () {
                         />
                         <p className="text-btn-one-color text-xs">828 LANE ALLEN RD STE 219, LEXINGTON, KY 40504 </p>
                     </div>
-                    <div className="flex items-center gap-4">
+                    {/* <div className="flex items-center gap-4">
                         <Image 
                         src={"/images/phone.svg"}
                         width={20}
@@ -50,7 +50,7 @@ export default function ContactPage () {
                         alt="Hero Image"
                         />
                         <a href="tel:+2349091179886" className="text-btn-one-color text-xs">(+234)9091179886</a>
-                    </div>
+                    </div> */}
                     <div className="flex items-center gap-4">
                         <Image 
                         src={"/images/mail.svg"}
@@ -58,27 +58,28 @@ export default function ContactPage () {
                         height={20}
                         alt="Hero Image"
                         />
-                        <a href="mailto:info@swiftpenenterprise.com" className="text-btn-one-color text-xs">info@swiftpenenterprise.com</a>
+                        <a href="mailto:info@swiftpenenterprise.com" className="text-btn-one-color text-xs duration-300 hover:text-amber-700">info@swiftpenenterprise.com</a>
                     </div>
                 </div>
             
                 <div className="social-icons flex justify-center items-center space-x-4 m-12 lg:mt-0">
                     <a href="https://www.facebook.com/swiftpenenterprise?mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer">
-                        <FaFacebookF size={20} className="text-text-color-five" />
+                        <FaFacebookF size={20} className="text-text-color-five duration-300 " />
                     </a>
                     <a href="https://www.linkedin.com/company/swift-pen-enterprise/" target="_blank" rel="noopener noreferrer">
-                        <FaLinkedin size={20} className="text-text-color-five" />
+                        <FaLinkedin size={20} className="text-text-color-five duration-300  " />
                     </a>
-                    <a href="https://x.com/Swiftpen_e?t=rPuU0m7BEZCnDsdx1PkHJQ&s=09" target="_blank" rel="noopener noreferrer">
+                    <a href="https://x.com/Swiftpen_e?t=rPuU0m7BEZCnDsdx1PkHJQ&s=09" target="_blank" rel="noopener noreferrer" className="">
                         <Image 
                         src={"/images/x-dark.svg"}
                         width={20}
                         height={20}
                         alt="Hero Image"
+                        className=""
                     />
                     </a>
                     <a href="https://www.instagram.com/swiftpen_e/?igsh=MWxzd2hwZWsxdTE3Ng%3D%3D" target="_blank" rel="noopener noreferrer">
-                    <FaInstagram size={20} className="text-text-color-five" />
+                    <FaInstagram size={20} className="text-text-color-five duration-300 " />
                     </a>
                 </div>
             </div>
