@@ -58,7 +58,7 @@ export default function Footer() {
                 />
                 <p className="text-btn-one-color text-xs">828 LANE ALLEN RD STE 219, LEXINGTON, KY 40504</p>
               </div>
-              <div className="flex items-center gap-4">
+              {/* <div className="flex items-center gap-4">
                 <Image 
                   src={"/images/phone.svg"}
                   width={20}
@@ -66,7 +66,7 @@ export default function Footer() {
                   alt="Hero Image"
                 />
                 <a href="tel:+2349091179886" className="text-btn-one-color text-xs duration-300 hover:text-yellow-700">(+234)9091179886</a>
-              </div>
+              </div> */}
               <div className="flex items-center gap-4">
                 <Image 
                   src={"/images/mail.svg"}
