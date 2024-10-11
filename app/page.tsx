@@ -1,3 +1,4 @@
+///Importing components
 import { montsy } from "@/fonts/fonts";
 import Header from "@/components/Header";
 import Main from "@/components/Main";

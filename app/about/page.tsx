@@ -1,3 +1,4 @@
+//About us page
 import Header from "@/components/Header";
 import Founder from "@/components/Founder";
 import { montsy, merri } from "@/fonts/fonts";
