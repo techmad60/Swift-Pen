@@ -1,3 +1,4 @@
+//FAQS PAGE
 import Header from "@/components/Header";
 import { montsy, merri } from "@/fonts/fonts";
 import Image from "next/image";
